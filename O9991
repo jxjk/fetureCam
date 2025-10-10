@@ -1,0 +1,49 @@
+O9991(Find the center coordinates from the 4 sides of the blank)
+(G65 P9991 X Y Z)
+IF[[#24*#25] LE 0] THEN #3000=1(Check X#24 Y#25 )
+IF[ #26 LE 0] THEN #3000=1(Check Z#26 )
+
+T21 M6
+IF[#921 EQ 199] GOTO10
+#3006=1(Change centering stick)
+#921 = 199
+
+N10
+GO G90 G54.1 P48 X-[#24+8] Y-[#25/2]
+G43 H199 Z[#26+50]
+S800 M3
+#3006=1(Move the centering stick to the Left)
+#3006=1(Confirm on the Left OK)
+#22 = #5021
+G1 G91 X-3. F50.
+G0 G90 Z[#26+50]
+G0 G90 X-8. Y-[#25/2]
+#3006=1(Move the centering stick to the Right)
+#3006=1(Confirm on the Right OK)
+#5221 = [#5021+#22]/2
+G1 G91 X3. F50.
+G0 G90 Z[#26+50]
+G0 G90 X-[#24/2] Y8.
+#3006=1(Move the centering stick to the Up)
+#3006=1(Confirm at the Up OK)
+#22 = #5022
+G1 G91 Y3. F50.
+G0 G90 Z[#26+50]
+G0 G90 X-[#24/2]  Y-[#25+8]
+#3006=1(Move the centering stick to the Down)
+#3006=1(Confirm at the Bottom OK)
+#5222 = [#5022+#22]/2
+#5223 = [#19983 + #26]
+M5
+G1 G91 Y-3. F50.
+#3006=1( Please reduce the movement magnification )
+G28 G91 Z0.
+G0 G90 G54 X0. Y0.
+#3006=1(Confirm G54 X0. Y0. )
+G43 H199 Z50.
+#3006=1(Confirm G54 Z0.  )
+G28 G91 Z0.
+#24 = #0
+#25 = #0
+#26 = #0
+M99

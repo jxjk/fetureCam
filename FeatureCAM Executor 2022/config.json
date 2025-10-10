@@ -1,0 +1,13 @@
+{
+  "CheckBox state": {
+    "EnvsNameFilter": true,
+    "GripFilter": true,
+    "DateSort": true
+  },
+  "Manual execution environment": {
+    "FeatureCAM execute file (.exe)": "D:\\Program Files\\FeatureCAM 2024\\program\\ezfm.exe",
+    "MSM_NC_Creator execute file (.exe)": "",
+    "Process design directory": "",
+    "SandBox directory": ""
+  }
+}

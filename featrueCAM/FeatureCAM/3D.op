@@ -1,0 +1,51 @@
+MANUFACTURING OPERATION SHEET
+
+Part:	3D
+Setup:	Setup1 (1 of 1)
+Date:	Friday, December 01, 2023 13:04:39
+Time:	0:33.6
+Stock:	Z (0.0000  mm, -42.0000 mm) x OD 32.0000 mm
+Mat:	ÂÁ, 111.00 Brinell,0.82 kN/mm^2
+
+Op: 1	side2  (rough1),  Fixture G54
+F/S:	0     RPM,  0 MMPM (0.004 MMPT)
+Tool:	#1  (¶ËÏ³µ¶M1400:reg-rotary Z, 14.0000 mm)
+Depth:	2.5000  mm
+Other:	Stepover: 4.6620  mm
+Time:	0:16.1
+*************************************************************
+Soft Error: FS001SE: Feed and speed table not found for 
+		Stock material:	ÂÁ
+		Stock hardness:	111
+		Tool material:	tmat==NULL
+		Tool finish:	BRIGHT
+*************************************************************
+
+Op: 2	side2  (rough2),  Fixture G54
+F/S:	0     RPM,  0 MMPM (0.004 MMPT)
+Tool:	#2  (¶ËÏ³µ¶M0800:reg-rotary Z, 8.0000  mm)
+Depth:	2.5000  mm
+Other:	Stepover: 2.6640  mm
+Time:	0:17.3
+*************************************************************
+Soft Error: FS001SE: Feed and speed table not found for 
+		Stock material:	ÂÁ
+		Stock hardness:	111
+		Tool material:	tmat==NULL
+		Tool finish:	BRIGHT
+*************************************************************
+
+Op: 3	side2  (finish),  Fixture G54
+F/S:	0     RPM,  0 MMPM (0.004 MMPT)
+Tool:	#2  (¶ËÏ³µ¶M0800:reg-rotary Z, 8.0000  mm)
+Depth:	2.5000  mm
+Other:	Stepover: 1.0000  mm
+Time:	0:00.1
+*************************************************************
+Soft Error: FS001SE: Feed and speed table not found for 
+		Stock material:	ÂÁ
+		Stock hardness:	111
+		Tool material:	tmat==NULL
+		Tool finish:	BRIGHT
+*************************************************************
+

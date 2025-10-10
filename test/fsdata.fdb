@@ -1,0 +1,39 @@
+#  这是一 FeatureCAM 进给/速率和切削数据数据库输出文件。
+#  自...版本输出 30.0.0.0070 2024年11月22日 14:03:11
+#  请勿改变进给/转速或切削数据组 ID 串
+# 这是一表格定界符文本文件，它可直接输入到任何
+# 表单或数据库程序或重新输入回 FeatureCAM。
+#
+
+_units	MM
+
+mill_feed_speed_values
+stock_material	tool_material	tool_coating	hard_index	hardness	sp_profile_rough	fd_profile_rough	sp_profile_finish	fd_profile_finish	sp_slot_rough	fd_slot_rough	sp_slot_finish	fd_slot_finish	sp_face_rough	fd_face_rough	sp_face_finish	fd_face_finish	sp_plunge_rough	fd_plunge_rough
+工具钢-模型_P20	HSS	BRIGHT	1	627	24.384	0.08	36.576	0.06	16.337	0.0536	24.506	0.0402	39.014	0.08	58.522	0.06	40.538	0.14	
+工具钢-模型_P20	CARBIDE	BRIGHT	1	627	73.2	0.08	109.7	0.06	49	0.0536	73.5	0.0402	117	0.08	175.6	0.06	121.6	0.14	
+工具钢-模型_P20	COBALT	BRIGHT	1	627	24.384	0.08	36.576	0.06	16.337	0.0536	24.506	0.0402	39.014	0.08	58.522	0.06	40.538	0.14	
+
+drill_feed_speed_values
+stock_material	tool_material	tool_coating	hard_index	hardness	sp_drill	fd_drill
+工具钢-模型_P20	HSS	BRIGHT	1	627	16.764	0.14	
+工具钢-模型_P20	CARBIDE	BRIGHT	1	627	76.2	0.14	
+工具钢-模型_P20	COBALT	BRIGHT	1	627	16.764	0.14	
+
+tool_grade_scale_values
+tool_grade	base_grade	speed_scale	feed_scale
+Ken_KD100	硬质合金	130	100
+金属陶瓷	CARBIDE	120	100
+Ken_KC9120	硬质合金	115	100
+Sand_GC4025	CARBIDE	100	100
+Sand_H13A	硬质合金	100	100
+PCD	CARBIDE	130	100
+高速钢		100	100
+硬质合金		100	100
+CBN	硬质合金	130	100
+涂层硬质合金	CARBIDE	115	100
+Ken_K313	硬质合金	100	100
+陶瓷	CARBIDE	125	100
+Ken_KC935	硬质合金	115	100
+Ken_KD081	CARBIDE	130	100
+Ken_KC730	硬质合金	115	100
+Sand_GC235	CARBIDE	100	100

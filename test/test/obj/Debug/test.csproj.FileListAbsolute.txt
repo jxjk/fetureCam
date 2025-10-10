@@ -1,0 +1,9 @@
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\bin\Debug\test.exe.config
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\bin\Debug\test.exe
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\bin\Debug\test.pdb
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\test.csprojAssemblyReference.cache
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\Interop.FeatureCAM.dll
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\test.csproj.ResolveComReference.cache
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\test.exe
+D:\Users\00596\Desktop\fetureCAM二次开发\test\test\obj\Debug\test.pdb

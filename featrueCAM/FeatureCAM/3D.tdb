@@ -1,0 +1,16 @@
+#  This is a FeatureCAM tool database export file.
+#  Part:	3D
+#  Date:	Friday, December 01, 2023 13:02:06
+#  
+#  Crib name	基本米制
+#  Exported from version 28.0.0.0032
+#  Do not change tool group ID strings
+#  This is a tab delimited text file that can be imported into virtually any
+#  spreadsheet or database program or back into FeatureCAM.
+#
+
+
+Tool group	End Mill
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	finish	diameter	shank_diameter	cutter_length	overall_length	end_radius	taper	tool_end	cutting	flute_angle	number_flutes	diameter_at_bottom	mill_hand	full_cutter_len	end_rad_off_x	end_rad_off_y	shank_lower_dia	shank_lower_height	shank_taper_height	max_doc	max_stepover	ramp_angle
+端铣刀M1400:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	42.600000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	14.000000	12.700000	28.580000	79.379997	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M0800:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	22.300000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	8.000000	9.530000	14.290000	63.500000	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	

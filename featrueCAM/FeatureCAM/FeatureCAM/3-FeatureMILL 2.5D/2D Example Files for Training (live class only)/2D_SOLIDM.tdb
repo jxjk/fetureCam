@@ -1,0 +1,37 @@
+#  这是一 FeatureCAM 刀具数据库输出文件。
+#  零件:	2D_SOLIDM
+#  日期:	2020年4月1日 9:59:45
+#  
+#  库名称	刀具
+#  自...版本输出 26.0.0.0340
+#  请勿改变刀组 ID 串
+#  这是一表格定界符文本文件，它可直接输入到任何
+#  表单或数据库程序或重新输入回 FeatureCAM。
+#
+
+
+Tool group	End Mill
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	finish	diameter	shank_diameter	cutter_length	overall_length	end_radius	taper	tool_end	cutting	flute_angle	number_flutes	diameter_at_bottom	mill_hand	full_cutter_len	end_rad_off_x	end_rad_off_y	shank_lower_dia	shank_lower_height	shank_taper_height	max_doc	max_stepover	ramp_angle
+端铣刀M1200:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	37.400000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	12.000000	12.700000	25.400000	82.550003	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M1500:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	43.600000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	15.000000	12.700000	28.580000	79.379997	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M0800:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	22.300000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	8.000000	9.530000	14.290000	63.500000	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M2200:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	69.600000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	22.000000	22.230000	47.630001	104.779999	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M4000:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	90.800000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	40.000000	31.750000	50.799999	114.300003	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M2500:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	75.800000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	25.000000	25.400000	50.799999	114.300003	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+端铣刀M5000:reg	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	100.800000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	50.000000	31.750000	50.799999	114.300003	0.000000	0.000000	SINGLE	CENTER	STANDARD	2	0	RIGHT	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	0.000000	
+
+Tool group	Face Mill
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	diameter	height	corner_radius	number_of_inserts	mill_hand	max_doc	corner_is_chamfer	effective_diameter	tip_radius
+面铣M3200	CARBIDE	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	68.000000	0		No Override	0.000000	0.000000	0.000000	0	32.000000	30.000000	0.300000	3	RIGHT	0.000000	0	0.000000	0.000000	
+
+Tool group	Spot & Center Drills
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	finish	diameter	body_diameter	length	overall_length	angle	size_number	is_center	drill_cycle	mill_hand	included_angle
+中心_M1600-0630	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	56.300000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	6.300000	16.000000	6.300000	75.000000	118.000000	NONE	1	No Override	RIGHT	60.000000	
+中心_M2000-0800	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	56.300000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	8.000000	20.000000	8.000000	75.000000	118.000000	NONE	1	No Override	RIGHT	60.000000	
+中心_M1000-0400	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	37.500000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	4.000000	10.000000	4.000000	50.000000	118.000000	NONE	1	No Override	RIGHT	60.000000	
+
+Tool group	Twist Drill
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	finish	diameter	shank_diameter	length	overall_length	angle	is_insert	touch_at_shoulder	drill_cycle	no_spot	mill_hand	shank_lower_dia	shank_lower_height	shank_taper_height	number_flutes
+TD_M0790:J	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	91.300000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	7.900000	7.900000	81.000000	114.000000	118.000000	0	0	No Override	0	RIGHT	0.000000	0.000000	0.000000	0	
+TD_M0950:J	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	104.400000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	9.500000	9.500000	92.000000	127.000000	118.000000	0	0	No Override	0	RIGHT	0.000000	0.000000	0.000000	0	
+TD_M0480:J	HSS	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	65.200000	0		No Override	0.000000	0.000000	0.000000	0	BRIGHT	4.800000	4.800000	59.000000	89.000000	118.000000	0	0	No Override	0	RIGHT	0.000000	0.000000	0.000000	0	

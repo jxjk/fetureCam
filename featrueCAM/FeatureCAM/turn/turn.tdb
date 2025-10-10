@@ -1,0 +1,15 @@
+#  这是一 FeatureCAM 刀具数据库输出文件。
+#  零件:	turn
+#  日期:	2024年12月12日 10:56:20
+#  
+#  库名称	基本米制
+#  自...版本输出 28.0.0.0032
+#  请勿改变刀组 ID 串
+#  这是一表格定界符文本文件，它可直接输入到任何
+#  表单或数据库程序或重新输入回 FeatureCAM。
+#
+
+
+Tool group	Lathe - Turning
+name	material	measure	tool_slot	tool_slot_turret_2	tool_slot_turret_3	tool_slot_turret_4	dia_comp	dia_comp_turret_2	dia_comp_turret_3	dia_comp_turret_4	len_comp	len_comp_turret_2	len_comp_turret_3	len_comp_turret_4	tool_id	tool_id_turret_2	tool_id_turret_3	tool_id_turret_4	comment	speed_over	feed_over	exposed_len	finish_tool	tool_rotary	coolant	first_peck	second_peck	minimum_peck	connection_id	front_angle	back_angle	tip_angle	tip_radius	inscribed_circle	length	head_length	width	height	depth	bottom_clearance	front_clear	tool_radius	max_tool_radius	touch_x_offset	touch_z_offset	insert_type	is_side_type	turret_placement	tool_type	hand	is_cut_grip	max_doc	baxis_angle	gauge_x_preset	gauge_z_preset
+SW_Turn_80m_RH	CARBIDE	MM	0	0	0	0	0	0	0	0	0	0	0	0						100.000000	100.000000	0.000000	0		No Override	0.000000	0.000000	0.000000	0	5.000000	5.000000	80.000000	1.000000	15.000000	152.000000	30.000000	0.000000	31.000000	0.000000	6.350000	6.350000	19.000000	0.000000	-1.000000	-1.000000	80 Diamond	1	SW	Turning	RIGHT	0	0.000000	0.000000	0.000000	0.000000	

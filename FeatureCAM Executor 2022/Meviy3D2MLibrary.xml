@@ -1,0 +1,4018 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Meviy3D2MLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:Meviy3D2M.CalendarForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.CalendarForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.CalendarForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.CalendarForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Meviy3D2M.CalendarForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.Holiday">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Holiday.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Holiday.Table">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Holiday.YYYY">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.Load(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.Save(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.Save">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.Parse(System.String)">
+            <summary>
+            Loads data from the base directory using the specified year.
+            </summary>
+            <param name="yyyy">specified year.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Holiday.ParseAll">
+            <summary>
+            Loads data whose file name matches "^Holiday[0-9]{4}.csv$" from the base directory that the assembly resolver uses to probe for assemblies.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.HolidayCalendar">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.HolidayCalendar.BaseDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="pe"></param>
+        </member>
+        <member name="P:Meviy3D2M.HolidayCalendar.Holiday">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.LoadHoliday">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.SaveHoliday">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.HolidayCalendar.components">
+            <summary>
+            必要なデザイナー変数です。
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.Dispose(System.Boolean)">
+            <summary>
+            使用中のリソースをすべてクリーンアップします。
+            </summary>
+            <param name="disposing">マネージド リソースを破棄する場合は true を指定し、その他の場合は false を指定します。</param>
+        </member>
+        <member name="M:Meviy3D2M.HolidayCalendar.InitializeComponent">
+            <summary>
+            デザイナー サポートに必要なメソッドです。このメソッドの内容を 
+            コード エディターで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.Requirement">
+            <summary>
+            Types of requirements
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Requirement.Other">
+            <summary>
+            Other
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Requirement.OutOfG1Range">
+            <summary>
+            Out of G1 range. (Production Engineering Requirements)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Requirement.OutOfG2Range">
+            <summary>
+            Out of G2 range. (Production Engineering Requirements)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Requirement.Rebalancing">
+            <summary>
+            Rebalancing. (Manufacturing Requirements)
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.Dimensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.Dimensions.#ctor(System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="length"></param>
+            <param name="width"></param>
+            <param name="thickness"></param>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.Dimensions.#ctor(Meviy3D2M.Json)">
+            <summary>
+            
+            </summary>
+            <param name="json"></param>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Dimensions.Length">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Dimensions.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Dimensions.Thickness">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FaPlate">
+            <summary>
+            BLK.FA_PLATE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaPlate.Dimensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FaPlate.#ctor(Meviy3D2M.Json)">
+            <summary>
+            
+            </summary>
+            <param name="envJson"></param>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.ManualCondition">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.ManualCondition.Test(System.String,Meviy3D2M.EnvsFolder)">
+            <summary>
+            
+            </summary>
+            <param name="number">manual condition number</param>
+            <param name="envs">EnvsFolder</param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.AllStepHoleType">
+            <summary>
+            Represents a definition to identify a all step hole type.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.AllStepHoleType.UnKnown">
+            <summary>
+            Not defined
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.AllStepHoleType.CounterSunk">
+            <summary>
+            COUNTERSUNK
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.AllStepHoleType.N_Step">
+            <summary>
+            N_STEP
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.AllStepHoleTypeExtensions">
+            <summary>
+            Extends AllStepHoleType
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.AllStepHoleTypeExtensions.JsonString(Meviy3D2M.FeatureJson.AllStepHoleType)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="holeType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.AllStepHoleTypeExtensions.Test(Meviy3D2M.FeatureJson.AllStepHoleType,Meviy3D2M.Json)">
+            <summary>
+            Checks whether or not the specified Json belongs to this all step hole type.
+            </summary>
+            <param name="allStepHoleType">AllStepHoleType enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this all step hole type, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.ConfigurationCriteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.ConfigurationCriteria.#ctor(System.String,System.String)">
+            <summary>
+            Initialize a new Config with the specified file.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.ConfigurationCriteria.#ctor">
+            <summary>
+            Initialize a new Config.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.ConfigurationCriteria.Enumerable">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.ConfigurationCriteria.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.Criteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Criteria.Division">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Criteria.Label">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Criteria.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Criteria.Requirement">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.Criteria.Test">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.Criteria.SetDelegate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.CriteriaControl">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.CriteriaControl.Buttons">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.CriteriaControl.Index">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.CriteriaControl.Label">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.CriteriaControl.State">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.CriteriaControl.Delegate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.CriteriaControl.MouseDowned">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaControl.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaControl.#ctor(Meviy3D2M.FeatureJson.Criteria)">
+            <summary>
+            
+            </summary>
+            <param name="criteria"></param>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaControl.RadioButton_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.CriteriaControl.components">
+            <summary> 
+            必要なデザイナー変数です。
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaControl.Dispose(System.Boolean)">
+            <summary> 
+            使用中のリソースをすべてクリーンアップします。
+            </summary>
+            <param name="disposing">マネージド リソースを破棄する場合は true を指定し、その他の場合は false を指定します。</param>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaControl.InitializeComponent">
+            <summary> 
+            デザイナー サポートに必要なメソッドです。このメソッドの内容を 
+            コード エディターで変更しないでください。
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.CriteriaDelegate">
+            <summary>
+            
+            </summary>
+            <param name="envsFolder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.DefaultCriteria">
+            <summary>
+            振り分け条件の初期設定
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.DefaultCriteria.List">
+            <summary>
+            振り分け条件の一覧を取得します。
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.DefaultCriteria.GetDelegate(System.String)">
+            <summary>
+            指定されたラベルの振り分け条件から判定関数のデリゲートを取得します。
+            </summary>
+            <param name="label">振り分け条件のラベル</param>
+            <returns>振り分け条件の判定関数</returns>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.MaterialCompleted">
+            <summary>
+            材料完結
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.ThicknessLT5">
+            <summary>
+            薄板(5>thickness)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.SUS">
+            <summary>
+            SUS
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.LengthGT150">
+            <summary>
+            A寸150超え
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.WidthLT29">
+            <summary>
+            B寸29未満
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.ThicknessLT8">
+            <summary>
+            T寸8未満(5以上)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.PrecisionHole">
+            <summary>
+            精度穴(深さ問わず)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.ViseNotAvailable">
+            <summary>
+            バイス不可形状
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.Removal65PercentOrMore">
+            <summary>
+            除去体積65%
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.CounterSunk">
+            <summary>
+            皿穴
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.FineTap">
+            <summary>
+            細目タップ
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.PrecisionSlot">
+            <summary>
+            精度長穴(深さ問わず)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.PrecisionFace">
+            <summary>
+            位置精度ポケット(深さ問わず)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.SlotOver2D">
+            <summary>
+            2D超え長穴
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.PocketOver2D">
+            <summary>
+            2D超えポケット
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.BothMultipleAndSlot">
+            <summary>
+            複合形状と長穴形状が両方存在
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.MultipleExceptChamfer">
+            <summary>
+            複合形状（面取りのみ複合形状は除く）
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.L2Count1">
+            <summary>
+            L2条件集計1以上
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.CornerCutAndHole">
+            <summary>
+            材料屋コーナーカット＋穴のみ
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.MultipleChamferOnly">
+            <summary>
+            面取りのみ複合形状
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.DefaultCriteria.Remaining">
+            <summary>
+            その他
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.CriteriaForm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.FeatureJson.CriteriaForm.Criterias">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaForm.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaForm.CriteriaForm_Load(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.CriteriaForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.CriteriaForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.Division">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Division.None">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Division.G1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.Division.G2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.SerializingCriteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SerializingCriteria.Bounds">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SerializingCriteria.WindowState">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SerializingCriteria.MaxG2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SerializingCriteria.Criterias">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.OpenOrClose">
+            <summary>
+            Represents the definition of open or close classification.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.OpenOrClose.Close">
+            <summary>
+            CLOSE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.OpenOrClose.Open">
+            <summary>
+            OPEN
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.OpenOrCloseExtensions">
+            <summary>
+            Extends OpenOrClose
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.OpenOrCloseExtensions.JsonString(Meviy3D2M.FeatureJson.OpenOrClose)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="openOrClose"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.OpenOrCloseExtensions.Test(Meviy3D2M.FeatureJson.OpenOrClose,Meviy3D2M.Json)">
+            <summary>
+            Checks whether or not the specified Json belongs to this open or close classification.
+            </summary>
+            <param name="openOrClose">OpenOrClose enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this open or close classification, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.HoleType">
+            <summary>
+            Represents a definition to identify a hole type.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.HoleType.UnKnown">
+            <summary>
+            Not defined
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.HoleType.MetricTap">
+            <summary>
+            METRIC_TAP
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.HoleType.PrecisionStraight">
+            <summary>
+            PRECISION_STRAIGHT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.HoleType.Straight">
+            <summary>
+            STRAIGHT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.HoleType.TapPilotHole">
+            <summary>
+            TAP_PILOT_HOLE
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.HoleTypeExtensions">
+            <summary>
+            Extends HoleType
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.HoleTypeExtensions.JsonString(Meviy3D2M.FeatureJson.HoleType)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="holeType">HoleType enum value.</param>
+            <returns>A string on the corresponding JSON file. If unknown, returns a null.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.HoleTypeExtensions.Test(Meviy3D2M.FeatureJson.HoleType,Meviy3D2M.Json,System.Int32)">
+            <summary>
+            Checks if the step of the specified Json is this HoleType.
+            </summary>
+            <param name="type">HoleType enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <param name="step">Specify the step number of the hole to be inspected.</param>
+            <returns>If the step of the specified Json is this HoleType, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.SingleOrMultiple">
+            <summary>
+            Represents the definition of single or multiple classification.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SingleOrMultiple.Multiple">
+            <summary>
+            MULTIPLE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.SingleOrMultiple.Single">
+            <summary>
+            SINGLE
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.SingleOrMultipleExtensions">
+            <summary>
+            Extends SingleOrMultiple
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.SingleOrMultipleExtensions.JsonString(Meviy3D2M.FeatureJson.SingleOrMultiple)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="singleOrMultiple"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.SingleOrMultipleExtensions.Test(Meviy3D2M.FeatureJson.SingleOrMultiple,Meviy3D2M.Json)">
+            <summary>
+            Checks whether or not the specified Json belongs to this single or multiple classification.
+            </summary>
+            <param name="singleOrMultiple">SingleOrMultiple enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this single or mutiple classification, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.EnumerableExtensions">
+            <summary>
+            Provides a set of static (Shared in Visual Basic) extended methods for querying objects that implement IEnumerable&lt;T&gt;.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Type``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.JsonType)">
+            <summary>
+            Filters a sequence of values based on a JsonType.
+            </summary>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="type">Represents a definition that identifies a JSON file.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or JsonType is null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Type``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.FeatureType)">
+            <summary>
+            Filters a sequence of values based on a FeatureType.
+            </summary>
+            <remarks>Unknown type cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="type">Represents a definition to identify a feature type.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or FeatureType is null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Type``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.HoleType,System.Int32)">
+            <summary>
+            Filters a sequence of values based on a HoleType.
+            </summary>
+            <remarks>Unknown id cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="type">Represents a definition to identify a hole type.</param>
+            <param name="step">Specify the step number of the hole to be inspected.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or HoleType is null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Type``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.AllStepHoleType)">
+            <summary>
+            Filters a sequence of values based on a AllStepHoleType.
+            </summary>
+            <remarks>Unknown id cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="type">Represents a definition to identify a all-step hole type.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or AllStepHoleType is null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Class``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.FaceId)">
+            <summary>
+            Filters a sequence of values based on a FaceId.
+            </summary>
+            <remarks>Unknown id cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="id">Represents a definition to identify a face id.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or FaceId is null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Class``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.OpenOrClose)">
+            <summary>
+            Filters a sequence of values based on a OpenOrClose.
+            </summary>
+            <remarks>Unknown classification cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="classification">Represents a definition to identify a open or close classification.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or open or close classification are null.</exception>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.EnumerableExtensions.Class``1(System.Collections.Generic.IEnumerable{``0},Meviy3D2M.FeatureJson.SingleOrMultiple)">
+            <summary>
+            Filters a sequence of values based on a SingleOrMultiple.
+            </summary>
+            <remarks>Unknown classification cannot be filtered.</remarks>
+            <typeparam name="T">The type of the elements of source.</typeparam>
+            <param name="this">An IEnumerable&lt;T&gt; to filter.</param>
+            <param name="classification">Represents a definition to identify a single or multiple classification.</param>
+            <returns>An IEnumerable&lt;T&gt; that contains elements from the input sequence that satisfy the condition.</returns>
+            <exception cref="T:System.ArgumentNullException">The source or single or multiple classification are null.</exception>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FaceId">
+            <summary>
+            Represents a definition to identify a face id.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Top">
+            <summary>
+            TOP
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Bottom">
+            <summary>
+            BOTTOM
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Front">
+            <summary>
+            FRONT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Back">
+            <summary>
+            BACK
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Left">
+            <summary>
+            LEFT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FaceId.Right">
+            <summary>
+            RIGHT
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FaceIdExtentions">
+            <summary>
+            Extends FaceId
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FaceIdExtentions.JsonString(Meviy3D2M.FeatureJson.FaceId)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="faceId">FaceId enum value</param>
+            <returns>A string on the corresponding JSON file.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FaceIdExtentions.Test(Meviy3D2M.FeatureJson.FaceId,Meviy3D2M.Json)">
+            <summary>
+            Checks if the specified Json is of this FaceId.
+            </summary>
+            <param name="faceId">FaceId enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this FaceId, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FeatureCategory">
+            <summary>
+            It provides the ability to classify features.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.HasFineTap(Meviy3D2M.Json)">
+            <summary>
+            Check if the feature has a fine tap.
+            </summary>
+            <remarks>Examine STEP1, STEP2, and STEP3 of METRIC_TAP.</remarks>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.HasThroughTap(Meviy3D2M.Json)">
+            <summary>
+            Check if the feature has a through tap.
+            </summary>
+            <remarks>Examine STEP1, STEP2, and STEP3 of METRIC_TAP.</remarks>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsCornerCut(Meviy3D2M.Json,System.Decimal,System.Decimal)">
+            <summary>
+            Check if the feature is a corner cut.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <param name="plateLength">Length of blank plate. @BLK.FA_PLATE.LENGTH</param>
+            <param name="plateWidth">Width of blank plate. @BLK.FA_PLATE.WIDTH</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsHoleWithMouthChamferGreaterThanThreshold(Meviy3D2M.Json,System.Decimal)">
+            <summary>
+            Check for holes with mouth-chamfers greater than the threshold.
+            </summary>
+            <param name="json"></param>
+            <param name="value">Chamfer dimension threshold.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsHoleInterfereCornerCut(Meviy3D2M.Json,System.Decimal,Meviy3D2M.FeatureJson.FaceId,System.Boolean,System.Decimal,System.Decimal)">
+            <summary>
+            Check for holes that interfere with the corner cut.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <param name="CCx">Target C dimension.</param>
+            <param name="faceId">The surface to which the hole to be confirmed belongs.</param>
+            <param name="negativeDirection">Direction of hole diameter interference.</param>
+            <param name="plateLength">Length of blank plate. @BLK.FA_PLATE.LENGTH</param>
+            <param name="plateWidth">Width of blank plate. @BLK.FA_PLATE.WIDTH</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+            <see cref="D:\Git\pppf-dx-plate-3d2m\Meviy3D2MLibrary\Meviy3D2MLibrary\Logic\コーナーカットに干渉する穴判定 2022-06-13 102522.jpg"/>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsMachining(Meviy3D2M.Json)">
+            <summary>
+            Find out if it is a feature to be machined.
+            </summary>
+            <remarks>Any of HOLE, POCKET, or SLOT</remarks>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsMetricTapWithStep2(Meviy3D2M.Json)">
+            <summary>
+            Check if STEP1 is metric tap and STEP2 exists.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsInterferenceParallel(Meviy3D2M.Json,System.Decimal,System.Decimal,System.Decimal,System.Decimal)">
+            <summary>
+            Check for through holes that interfere with the parallel. (Check for cases of interference due to insufficient downhole depth.)
+            </summary>
+            <remarks>Check the coordinates and hole diameter from the side of the machined surface to which the feature, which penetrates in a single step of threaded or precision hole, belongs.</remarks>
+            <param name="json">Json to be inspected.</param>
+            <param name="distance">Interference distance (mm). Total thickness and clearance of parallels.</param>
+            <param name="plateLength">Length of blank plate. @BLK.FA_PLATE.LENGTH</param>
+            <param name="plateWidth">Width of blank plate. @BLK.FA_PLATE.WIDTH</param>
+            <param name="plateThickness">Thickness of blank plate. @BLK.FA_PLATE.THICKNESS</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsInterferenceParallel(Meviy3D2M.Json,System.Decimal,Meviy3D2M.FeatureJson.Dimensions)">
+            <summary>
+            Check for through holes that interfere with the parallel. (Check for cases of interference due to insufficient downhole depth.)
+            </summary>
+            <remarks>Check the coordinates and hole diameter from the side of the machined surface to which the feature, which penetrates in a single step of threaded or precision hole, belongs.</remarks>
+            <param name="json">Json to be inspected.</param>
+            <param name="distance">Interference distance (mm). Total thickness and clearance of parallels.</param>
+            <param name="dimensions">Dimensions of blank plate. @BLK.FA_PLATE</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsToleranceRangeGreaterThanThreshold(Meviy3D2M.Json,System.Double)">
+            <summary>
+            Checks if the location tolerance is within a tolerance range greater than a specified threshold.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <param name="value">Threshold to check</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsToleranceRangeWithinThreshold(Meviy3D2M.Json,System.Double)">
+            <summary>
+            Checks if the location tolerance is within the specified threshold tolerance range.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <param name="value">Threshold to check</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsToleranceReferenceBBR(Meviy3D2M.Json)">
+            <summary>
+            Checks if the tolerance refers to "BOTTOM", "BACK", "RIGHT".
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsToleranceReferenceFace(Meviy3D2M.Json)">
+            <summary>
+            Checks if the tolerance refers to a type "FACE".
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsPocketOver2D(Meviy3D2M.Json,System.Int32@)">
+            <summary>
+            Check if the pocket is longer than 2D.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <param name="pattern">Returns the number of the determined pattern.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsPrecisionHoleToInspectGauge(Meviy3D2M.Json,System.String[],System.Double[])">
+            <summary>
+            Check if the hole is an precision hole subject to gauge inspection.
+            </summary>
+            <remarks>If there is a STEP2, check STEP2, if not, check STEP1.</remarks>
+            <param name="json">Json to be inspected.</param>
+            <param name="classes">An array of fit tolerance class codes. Precision holes with classes included in this array are subject to gauge inspection.</param>
+            <param name="diameters">An array of diameters. Precision holes with diameters included in this array are subject to gauge inspection.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsPrecisionSlot(Meviy3D2M.Json)">
+            <summary>
+            Check if the slot is precision slot.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.IsSlotOver2D(Meviy3D2M.Json)">
+            <summary>
+            Check if the slot is longer than 2D.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureCategory.Is2StageHole(Meviy3D2M.Json)">
+            <summary>
+            Check if the hole is 2-stage hole.
+            </summary>
+            <param name="json">Json to be inspected.</param>
+            <returns>true for the relevant feature, false otherwise.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FeatureType">
+            <summary>
+            Represents a definition to identify a feature type.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.UnKnown">
+            <summary>
+            Not defined
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.Clearance">
+            <summary>
+            CLEARANCE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.FAPlate">
+            <summary>
+            FA_PLATE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.Hole">
+            <summary>
+            HOLE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.LocationTolerance">
+            <summary>
+            LOCATION_TOLERANCE
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.Pocket">
+            <summary>
+            POCKET
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.FeatureType.Slot">
+            <summary>
+            SLOT
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.FeatureTypeExtentions">
+            <summary>
+            Extends FeatureType
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureTypeExtentions.JsonString(Meviy3D2M.FeatureJson.FeatureType)">
+            <summary>
+            Get a string on a JSON file.
+            </summary>
+            <param name="featureType">FeatureId enum value.</param>
+            <returns>A string on the corresponding JSON file. If unknown, returns a null.</returns>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.FeatureTypeExtentions.Test(Meviy3D2M.FeatureJson.FeatureType,Meviy3D2M.Json)">
+            <summary>
+            Checks if the specified Json is of this FeatureType.
+            </summary>
+            <param name="featureType">FeatureId enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this FeatureType, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.JsonType">
+            <summary>
+            Represents a definition that identifies a JSON file.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.JsonType.Unknown">
+            <summary>
+            Not defined
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.JsonType.Env">
+            <summary>
+            meviy env.json
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.FeatureJson.JsonType.Feature">
+            <summary>
+            meviy feature.json
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FeatureJson.JsonTypeExtentions">
+            <summary>
+            Extends JsonType
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FeatureJson.JsonTypeExtentions.Test(Meviy3D2M.FeatureJson.JsonType,Meviy3D2M.Json)">
+            <summary>
+            Checks if the specified Json is of this JsonType.
+            </summary>
+            <param name="jsonType">JsonType enum value.</param>
+            <param name="json">Json to be inspected.</param>
+            <returns>If the specified Json is this JsonType, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.IActions">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.IActions.Type">
+            <summary>
+            @type
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.IActions.Name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.Fact">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Fact.Name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Fact.Value">
+            <summary>
+            value
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.ImageObject">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.ImageObject.Image">
+            <summary>
+            image
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.ImageObject.Title">
+            <summary>
+            title
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.OpenUri">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.OpenUri.Type">
+            <summary>
+            @type
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.OpenUri.Name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.OpenUri.Targets">
+            <summary>
+            targets
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.OpenViewer">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.OpenViewer.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="globalNo"></param>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.OpenViewer.Name">
+            <summary>
+            name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.OpenViewer.Targets">
+            <summary>
+            targets
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.Postman">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MessageCard.Postman.HttpError429">
+            <summary>
+            If the response content contains this string, initiate retry logic.
+            </summary>
+            <remarks>Please note that response body needs to be extracted and read  as Connectors do not throw 429s.</remarks>
+            <see href="https://docs.microsoft.com/ja-jp/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-using?tabs=cURL"/>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.Postman.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the Postman class.
+            </summary>
+            <param name="incomingWebhookUrl">Incoming webhook URL.</param>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.Postman.PostAsync(System.String)">
+            <summary>
+            Send messages it through Incoming Webhook.
+            </summary>
+            <param name="content">The HTTP request content sent to the server.</param>
+            <returns>Response content.</returns>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.Postman.PostAsync(Meviy3D2M.MessageCard.MessageCard)">
+            <summary>
+            Send messages it through Incoming Webhook.
+            </summary>
+            <param name="card">The HTTP request content sent to the server.</param>
+            <returns>Response content.</returns>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.Postman.Dispose">
+            <summary>
+            Releases the unmanaged resources used by the HttpClient.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.Target">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Target.OS">
+            <summary>
+            os
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Target.Uri">
+            <summary>
+            uri
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.Url">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MessageCard.Url.meviy_ko_01">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MessageCard.Url.meviy_ko_02">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MessageCard.Url.fi3F0B_Y_400x400">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MessageCard.Url.series_meviy_ko">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.Url.GetSomeMeviykoUrl">
+            <summary>
+            Meviyko. Born in 2016. She is the propaganda captain within the meviy editorial department, and she understands meviy in more detail than anyone else. She mainly appears on blogs and SNS, and her daily routine is to explain complicated functions and usage in an easy-to-understand manner.Her specialty is loved and smiles.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.MessageCard">
+            <summary>
+            Legacy actionable message card.
+            </summary>
+            <see href="https://docs.microsoft.com/ja-jp/microsoftteams/platform/task-modules-and-cards/cards/cards-reference#office-365-connector-card"/>
+            <see href="https://docs.microsoft.com/ja-jp/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-using?tabs=cURL"/>
+            <see href="https://docs.microsoft.com/ja-jp/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Type">
+            <summary>
+            @type
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Context">
+            <summary>
+            @context
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.CorrelationId">
+            <summary>
+            correlationId
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.ExpectedActors">
+            <summary>
+            expectedActors
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Originator">
+            <summary>
+            originator
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Summary">
+            <summary>
+            summary
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.ThemeColor">
+            <summary>
+            themeColor
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.HideOriginalBody">
+            <summary>
+            hideOriginalBody
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Title">
+            <summary>
+            title
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Text">
+            <summary>
+            text
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.Sections">
+            <summary>
+            sections
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.MessageCard.PotentialAction">
+            <summary>
+            potentialAction
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.MessageCard.ToJson">
+            <summary>
+            Serialize this instance to a JSON string using formatting.
+            </summary>
+            <returns>A JSON string representation of this instance.</returns>
+        </member>
+        <member name="M:Meviy3D2M.MessageCard.MessageCard.ToJson(Newtonsoft.Json.Formatting)">
+            <summary>
+            Serialize this instance to a JSON string using formatting.
+            </summary>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <returns>A JSON string representation of this instance.</returns>
+        </member>
+        <member name="T:Meviy3D2M.MessageCard.Section">
+            <summary>
+            
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/outlook/actionable-messages/message-card-reference"/>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.Title">
+            <summary>
+            title
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.StartGroup">
+            <summary>
+            startGroup
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.ActivityImage">
+            <summary>
+            activityImage
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.ActivityTitle">
+            <summary>
+            activityTitle
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.ActivitySubtitle">
+            <summary>
+            activitySubtitle
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.ActivityText">
+            <summary>
+            activityText
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.HeroImage">
+            <summary>
+            heroImage
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.Text">
+            <summary>
+            text
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.Facts">
+            <summary>
+            facts
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.Images">
+            <summary>
+            images
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MessageCard.Section.PotentialAction">
+            <summary>
+            potentialAction
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.AutoRecQueue">
+            <summary>
+            Represents a thread-safe first in-first out (FIFO) collection of Rec.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.AutoRecQueue.Count">
+            <summary>
+            Gets the number of elements contained in the Queue.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.AutoRecQueue.EnableRaisingEvents">
+            <summary>
+            Gets or sets a value indicating whether the component is enabled.
+            </summary>
+            <returns>true if the component is enabled; otherwise, false. The default is false. If you are using the component on a designer in Visual Studio 2005, the default is true.</returns>
+            <exception cref="T:System.ObjectDisposedException">The FileSystemWatcher object has been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">The current operating system is not Microsoft Windows NT or later.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The directory specified in Path could not be found.</exception>
+            <exception cref="T:System.ArgumentException">Path has not been set or is invalid.</exception>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the AutoRecQueue class on the specified path.
+            </summary>
+            <param name="path">A string specifying the path on which to create the AutoRecQueue.</param>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.Dequeue">
+            <summary>
+            Removes and returns the object at the beginning of the AutoRecQueue.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.Enqueue(System.String)">
+            <summary>
+            Adds an object to the end of the AutoRecQueue.
+            </summary>
+            <param name="path">A string specifying the path of the Rec to be added to the end of the AutoRecQueue.</param>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.Synchronize">
+            <summary>
+            Synchronize with monitored folders.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.TryDequeue(Meviy3D2M.Rec@)">
+            <summary>
+            Tries to remove and return the Rec at the beginning of the concurrent queue.
+            </summary>
+            <param name="result">When this method returns, if the operation was successful, result contains the object removed. If no object was available to be removed, the value is unspecified.</param>
+            <returns>true if an element was removed and returned from the beginning of the AutoRecQueue successfully; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.TryEnqueue(Meviy3D2M.Rec)">
+            <summary>
+            Tries to add the Rec to the end of the AutoRecQueue.
+            </summary>
+            <param name="rec">The Rec to add to the end of the AutoRecQueue. The value can be a null reference (Nothing in Visual Basic) for reference types.</param>
+            <returns>true if an element was added to the end of the AutoRecQueue successfully; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.TryEnqueue(System.String)">
+            <summary>
+            Tries to add the Rec to the end of the AutoRecQueue.
+            </summary>
+            <param name="path">A string specifying the path of the Rec to be added to the end of the AutoRecQueue.</param>
+            <returns>true if an element was added to the end of the AutoRecQueue successfully; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.TryPeek(Meviy3D2M.Rec@)">
+            <summary>
+            Tries to return an object from the beginning of the AutoRecQueue without removing it.
+            </summary>
+            <param name="result">When this method returns, result contains an object from the beginning of the AutoRecQueue or an unspecified value if the operation failed.</param>
+            <returns>true if an object was returned successfully; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.AutoRecQueue.Dispose">
+            <summary>
+            Releases the unmanaged resources used by the FileSystemWatcher and optionally releases the managed resources.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.EnvsFolder">
+            <summary>
+            Provides information and operations for EnvsFolder.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.EnvsFolder.Info">
+            <summary>
+            Exposes instance methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.#ctor(System.IO.DirectoryInfo)">
+            <summary>
+            Initializes a new instance of the EnvsFolder class on the specified path.
+            </summary>
+            <param name="info">Information about the folder referenced by this instance.</param>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the EnvsFolder class on the specified path.
+            </summary>
+            <param name="path">A string specifying the path on which to create the DirectoryInfo.</param>
+            <exception cref="T:System.ArgumentNullException">fileName is null.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.ArgumentException">.NET Framework and .NET Core versions older than 2.1: The file name is empty, contains only white spaces, or contains invalid characters.</exception>
+            <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.GripFiles">
+            <summary>
+            Enumerate files whose file names begin with "grip-" and contain the name of the grip side.
+            </summary>
+            <remarks>The string after the name of the grip side is optional. Extensions and names such as "grip-back-22" are acceptable.</remarks>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.GrippingSide">
+            <summary>
+            Retrieve the grip side.
+            </summary>
+            <remarks>If the grip side cannot be identified, returns null.</remarks>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.CreateGripFile(Meviy3D2M.GripSide)">
+            <summary>
+            Create or overwrite the grip file.
+            </summary>
+            <param name="gripSide">GripSide enum value</param>
+            <returns>The pathname of the grip file created or overwritten.</returns>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.CreateManualCondition(System.Int32)">
+            <summary>
+            Create the manual condition file with the specified number.
+            </summary>
+            <param name="number">Manual condition number.</param>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.ManualConditions">
+            <summary>
+            Get a list of manual conditions.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.ManualInspection">
+            <summary>
+            Get information from the "manual_inspection" file.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.ProductionLog">
+            <summary>
+            Get the folder to aggregate the log of the manufacturing file creation process (*).
+            </summary>
+            <remarks>(*)FCAM (MSM_NC_Creator.exe) and pre-processing (fcampre.py), EasyMPD (main.py), process design (processdesign.py), and post-processing (fcampost.py).</remarks>
+            <value>Log folder information</value>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.Process">
+            <summary>
+            Get information from the "Process" directory.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.SatFile">
+            <summary>
+            Returns the sat file information.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.SkipPost">
+            <summary>
+            Check for skip flag files.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.GetSixViewFile(Meviy3D2M.SixViewName)">
+            <summary>
+            Get the file of the target six-view drawing.
+            </summary>
+            <param name="name">View name to get.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.GetSixViewBitmap(Meviy3D2M.SixViewName)">
+            <summary>
+            Get the bitmap of the target six-view drawing.
+            </summary>
+            <param name="name">View name to get.</param>
+            <returns></returns>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.Jsons">
+            <summary>
+            Returns an enumerable collection of JSON file information in the current directory.
+            </summary>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.EnvJson">
+            <summary>
+            Returns information from the env json file.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.FeatureJsons">
+            <summary>
+            Get the enumerator of information in the json file for all features.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.MachiningFeaturesExceptForCornerCut">
+            <summary>
+            Returns an enumerable collection of features to be machined, except for corner cuts.
+            </summary>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.Criteria">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.FaPlate">
+            <summary>
+            BLK.FA_PLATE
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.OutOfG2RangeCriterias">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.ProcessInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.EnvsFolder.DMU50Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.OverwriteDMUImage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.Parse(System.IO.DirectoryInfo)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.EnvsFolder.Parse(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.GripSide">
+            <summary>
+            Grip side
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.GripSide.left">
+            <summary>
+            LEFT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.GripSide.right">
+            <summary>
+            RIGHT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.GripSide.front">
+            <summary>
+            FRONT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.GripSide.back">
+            <summary>
+            BACK
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.GripSide.auto">
+            <summary>
+            AUTO
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.GripSideExtentions">
+            <summary>
+            Extends GripSide
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.GripSideExtentions.GripSideNames">
+            <summary>
+            Retrieves an array of the names of the constants in the GripSide enumeration.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.InstructionPattern">
+            <summary>
+            @instruction_patterns
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionPattern.RootId">
+            <summary>
+            @root_id
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionPattern.Procs">
+            <summary>
+            @procs
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.InstructionProc">
+            <summary>
+            @instruction_patterns @procs
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionProc.ProcId">
+            <summary>
+            @proc_id
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionProc.ProcName">
+            <summary>
+            @proc_name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionProc.MachineName">
+            <summary>
+            @machine_name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionProc.AreaName">
+            <summary>
+            @area_name
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.InstructionProc.Mt">
+            <summary>
+            @mt
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.Mkj">
+            <summary>
+            Deserialize the MKJ file output from MEP.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.Material">
+            <summary>
+            @material
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SurfaceTreatment">
+            <summary>
+            @surface_treatment
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.PlateLength">
+            <summary>
+            @plate_length
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.PlateWidth">
+            <summary>
+            @plate_width
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.PlateThickness">
+            <summary>
+            @plate_thickness
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialType">
+            <summary>
+            @material_type
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialPrice">
+            <summary>
+            @material_price
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialSupplierCode">
+            <summary>
+            @material_supplier_code
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialArrivalDate">
+            <summary>
+            @material_arrival_date
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SurfaceTreatmentPrice">
+            <summary>
+            @surface_treatment_price
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SizeA">
+            <summary>
+            @size_A
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SizeB">
+            <summary>
+            @size_B
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SizeT">
+            <summary>
+            @size_T
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MillingsizeA">
+            <summary>
+            @millingsize_A
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MillingsizeB">
+            <summary>
+            @millingsize_B
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MillingsizeT">
+            <summary>
+            @millingsize_T
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.CornerCutCCA">
+            <summary>
+            @corner_cut_CCA
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.CornerCutCCB">
+            <summary>
+            @corner_cut_CCB
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.CornerCutCCC">
+            <summary>
+            @corner_cut_CCC
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.CornerCutCCD">
+            <summary>
+            @corner_cut_CCD
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.Chamfer">
+            <summary>
+            @chamfer
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.InstructionPatterns">
+            <summary>
+            @instruction_patterns
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.SupplierNo">
+            <summary>
+            @supplier_no
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.OrderQty">
+            <summary>
+            @order_qty
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialGroup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Mkj.MaterialOrderDate">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Mkj.IssueFileName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Mkj.Save(System.String,Newtonsoft.Json.Formatting)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <param name="formatting"></param>
+        </member>
+        <member name="M:Meviy3D2M.Mkj.Parse(System.String)">
+            <summary>
+            Returns an instance of the REC class deserialized with the JSON file of the specified path.
+            </summary>
+            <param name="path">Path of the JSON file to deserialize.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.IO.PathTooLongException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <exception cref="T:System.Security.SecurityException"></exception>
+        </member>
+        <member name="T:Meviy3D2M.MkjHistory">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MkjHistory.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.MkjHistory.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MkjHistory.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="folder"></param>
+        </member>
+        <member name="M:Meviy3D2M.MkjHistory.Add(Meviy3D2M.Mkj)">
+            <summary>
+            
+            </summary>
+            <param name="mkj"></param>
+        </member>
+        <member name="M:Meviy3D2M.MkjHistory.CheckCsvExists">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MkjHistory.GetNewTable">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.Pattern">
+            <summary>
+            Regular expression pattern.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.yyyy">
+            <summary>
+            [0-9]{4}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.yy">
+            <summary>
+            [0-9]{2}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.MM">
+            <summary>
+            (0[1-9]|1[0-2])
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.dd">
+            <summary>
+            (0[1-9]|[12][0-9]|3[01])
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.HH">
+            <summary>
+            ([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.mm">
+            <summary>
+            [0-5][0-9]
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ss">
+            <summary>
+            [0-5][0-9]
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.yyMMdd">
+            <summary>
+            [0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.yyyyMMdd">
+            <summary>
+            [0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.HHmmss">
+            <summary>
+            ([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.GlobalNo">
+            <summary>
+            [0-9A-Z]{14}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelHead">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId1">
+            <summary>
+            [0-9A-Z]{14}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId5">
+            <summary>
+            [0-9A-Z]{14}-E
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId6">
+            <summary>
+            [0-9A-Z]{14}-R
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId2">
+            <summary>
+            [0-9A-Z]{3}-[0-9A-Z]{5}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId3">
+            <summary>
+            [0-9A-Z]{3}-[0-9A-Z]{5}-E
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId4">
+            <summary>
+            [0-9A-Z]{3}-[0-9A-Z]{5}-R
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.SpecId">
+            <summary>
+            ([0-9A-Z]{14}|[0-9A-Z]{3}-[0-9A-Z]{5})
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo1">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo5">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}-E
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo6">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}-R
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo2">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo3">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}-E
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo4">
+            <summary>
+            [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}-R
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ModelNo">
+            <summary>
+            ([0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}|
+             [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}|
+             [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}-E|
+             [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{3}-[0-9A-Z]{5}-R|
+             [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}-E|
+             [0-9A-Z]{5}-[0-9A-Z]{3}-[0-9A-Z]{14}-R)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.EnvsName">
+            <summary>
+            [0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])_([0-9A-Z]{14}|[0-9A-Z]{3}-[0-9A-Z]{5})_[0-9A-Z]{14}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.EnvsName2">
+            <summary>
+            [0-9A-Z]{14}_[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetEnvsName(System.String,System.String,System.String)">
+            <summary>
+            {yyyyMMdd}_{specId}_{globalNo}
+            </summary>
+            <param name="yyyyMMdd"></param>
+            <param name="specId"></param>
+            <param name="globalNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetEnvsName2(System.String,System.String)">
+            <summary>
+            {globalNo}_{yyMMdd}
+            </summary>
+            <param name="globalNo"></param>
+            <param name="yyMMdd"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.RecName">
+            <summary>
+            REC_[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]_[0-9A-Z]{14}.json
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetRecName(System.String,System.String)">
+            <summary>
+            REC_{yyMMdd}([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]_{globalNo}.json
+            </summary>
+            <param name="yyMMdd"></param>
+            <param name="globalNo"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">The string does not match the pattern.</exception>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.MkjName">
+            <summary>
+            MKJ_[0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]_[0-9A-Z]{14}.json
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetMkjName(System.String,System.String)">
+            <summary>
+            MKJ_{yyyyMMdd}([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]_{globalNo}.json
+            </summary>
+            <param name="yyyyMMdd"></param>
+            <param name="globalNo"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">The string does not match the pattern.</exception>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetMkjName2(System.String)">
+            <summary>
+            MKJ_[0-9]{4}(0[1-9]|1[0-2])(0[1-9]|[12][0-9]|3[01])([01][0-9]|2[0-3])[0-5][0-9][0-5][0-9]_{globalNo}.json
+            </summary>
+            <param name="globalNo"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">The string does not match the pattern.</exception>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.OneOrTwoDigits">
+            <summary>
+            [0-9]{1,2}
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Pattern.ProcessFolderName">
+            <summary>
+            ^[0-9]{1,2}-(Top|Bottom|Front|Back|Left|Right)-[0-9]{1,2}$
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Pattern.GetProcessFolderName(Meviy3D2M.FeatureJson.FaceId)">
+            <summary>
+            ^[0-9]{1,2}-(Top|Bottom|Front|Back|Left|Right)-[0-9]{1,2}$
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.Rec">
+            <summary>
+            Deserialize the REC file output from MEP.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.IndustCode">
+            <summary>
+            @indust_code
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.OrderNo">
+            <summary>
+            @order_no
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.OrderDate">
+            <summary>
+            @order_date
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.Section">
+            <summary>
+            @section
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.SupplierNo">
+            <summary>
+            @supplier_no
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.ModelNo">
+            <summary>
+            @model_no
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.OrderQty">
+            <summary>
+            @order_qty
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.DeliveryDate">
+            <summary>
+            @delivery_date
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.ShipDate">
+            <summary>
+            @ship_date
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.Info">
+            <summary>
+            Exposes instance methods for creating, moving, and enumerating through directories and subdirectories. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.Enabled">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.EnvsName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.EnvsName2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.SpecId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Rec.DeliveryType">
+            <summary>
+            Shipping date classification.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Rec.IssueFileName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Rec.Save(System.String,Newtonsoft.Json.Formatting)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <param name="formatting"></param>
+        </member>
+        <member name="M:Meviy3D2M.Rec.ToJson">
+            <summary>
+            Serialize this instance to a JSON string.
+            </summary>
+            <returns>A JSON string representation of this instance.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Rec.ToJson(Newtonsoft.Json.Formatting)">
+            <summary>
+            Serialize this instance to a JSON string using formatting.
+            </summary>
+            <param name="formatting">Indicates how the output should be formatted.</param>
+            <returns>A JSON string representation of this instance.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Rec.Parse(System.String)">
+            <summary>
+            Returns an instance of the REC class deserialized with the JSON file of the specified path.
+            </summary>
+            <param name="path">Path of the JSON file to deserialize.</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.IO.PathTooLongException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+            <exception cref="T:System.NotSupportedException"></exception>
+            <exception cref="T:System.Security.SecurityException"></exception>
+        </member>
+        <member name="T:Meviy3D2M.DeliveryType">
+            <summary>
+            Delivery category.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.DeliveryType.Normal">
+            <summary>
+            Normal delivery
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.DeliveryType.Quick">
+            <summary>
+            Quick delivery
+            </summary>
+            <remarks>The model number ends with "-E".</remarks>
+        </member>
+        <member name="F:Meviy3D2M.DeliveryType.UltraQuick">
+            <summary>
+            Ultra-quick delivery
+            </summary>
+            <remarks>The model number ends with "-R".</remarks>
+        </member>
+        <member name="T:Meviy3D2M.DeliveryTypeExtentions">
+            <summary>
+            Extends DeliveryType
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.DeliveryTypeExtentions.DeliveryTypeString(Meviy3D2M.DeliveryType)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.DeliveryTypeExtentions.Test(Meviy3D2M.DeliveryType,System.String)">
+            <summary>
+            Checks if the specified model number is of this DeliveryType.
+            </summary>
+            <param name="type">DeliveryType enum value.</param>
+            <param name="modelNo">Model number to be inspected.</param>
+            <returns>If the specified Json is this DeliveryType, it returns true, otherwise it returns false.</returns>
+        </member>
+        <member name="T:Meviy3D2M.SixViewName">
+            <summary>
+            SixView name enumeration.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.top">
+            <summary>
+            TOP
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.bottom">
+            <summary>
+            BOTTOM
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.left">
+            <summary>
+            LEFT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.right">
+            <summary>
+            RIGHT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.front">
+            <summary>
+            FRONT
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SixViewName.back">
+            <summary>
+            BACK
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.SixViewNameExtentions">
+            <summary>
+            Extends SixView
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.SixViewNameExtentions.SixViewNames">
+            <summary>
+            Retrieves an array of the names of the constants in the SixViewName enumeration.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.DataTableEx">
+            <summary>
+            DataTableEx
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.GetCsvTableFromStream(System.IO.Stream)">
+            <summary>
+            
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.GetTableFromManifestResourceCsv(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.GetTableFromLocalCsv(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.GetTableFromCurrentDomainCsv(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.SetTableToLocalCsv(System.Data.DataTable,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="table"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:Meviy3D2M.DataTableEx.AddRowsToLocalCsv(System.Data.DataTable,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="table"></param>
+            <param name="path"></param>
+        </member>
+        <member name="T:Meviy3D2M.JIS">
+            <summary>
+            Indicates the Japan Industrial Standard.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.JIS.GetTableOfGeneralDimensionTolerance">
+            <summary>
+            Get the table of general dimension tolerance.
+            </summary>
+            <returns>DataTable of the general dimension tolerance.</returns>
+        </member>
+        <member name="M:Meviy3D2M.JIS.GetGeneralDimensionTolerance(System.Double,System.String)">
+            <summary>
+            Get the general dimension tolerance of the specified dimension.
+            </summary>
+            <param name="dimension">Specify the dimensions.</param>
+            <param name="grade">Specifies the tolerance grade symbol.</param>
+            <returns>Returns the upper and lower limits of general dimension tolerance as an array of type double. If there is no general dimension tolerance, null is returned.</returns>
+        </member>
+        <member name="T:Meviy3D2M.JsonComparer">
+            <summary>
+            Custom comparer for the Json class.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.JsonComparer.Equals(Meviy3D2M.Json,Meviy3D2M.Json)">
+            <summary>
+            Determines whether the specified objects are equal.
+            </summary>
+            <remarks>Jsons are equal if their file names and json string are equal.</remarks>
+            <param name="x">The first object of Json to compare.</param>
+            <param name="y">The second object of Json to compare.</param>
+            <returns>true if the specified objects are equal; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.JsonComparer.GetHashCode(Meviy3D2M.Json)">
+            <summary>
+            Returns a hash code for the specified object.
+            </summary>
+            <remarks>If Equals() returns true for a pair of objects then GetHashCode() must return the same value for these objects.</remarks>
+            <param name="obj">The Object for which a hash code is to be returned.</param>
+            <returns>A hash code for the specified object.</returns>
+            <exception cref="T:System.ArgumentNullException">The type of obj is a reference type and obj is null.</exception>
+        </member>
+        <member name="T:Meviy3D2M.MsmNcCreatorLight">
+            <summary>
+            MSM_NC_Creator.exe utility for the EngineLight
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags">
+            <summary>
+            ExitCode bit flag
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.None">
+            <summary>
+            There are no errors.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.RuntimeParameterError">
+            <summary>
+            1
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.SatFileReadError">
+            <summary>
+            2
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.SatFileImportError">
+            <summary>
+            4
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.JsonFileReadError">
+            <summary>
+            8
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.FeatureCreationError">
+            <summary>
+            16
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.JsonParameterError">
+            <summary>
+            32
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.NcOutputError">
+            <summary>
+            1024
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.OtherWarningErrors">
+            <summary>
+            2048
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.DBError">
+            <summary>
+            4096
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.NewDocumentCreationError">
+            <summary>
+            8192
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.FeatureCAMError">
+            <summary>
+            16384
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreatorLight.ExitCodeFlags.OtherExceptionErrors">
+            <summary>
+            32768
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MsmNcCreatorLight.Messages(System.Int32)">
+            <summary>
+            Parse the exitcode and get the messages.
+            </summary>
+            <param name="exitCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.DecimalExtensions">
+            <summary>
+            Extended methods for decimal types
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.DecimalExtensions.Normalize(System.Decimal)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.Dialog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.Dialog.FilterType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Dialog.FilterType.Exe">
+            <summary>
+            exe files (*.exe)|*.exe
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Dialog.FilterType.Py">
+            <summary>
+            script files (*.py)|*.py
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Dialog.String(Meviy3D2M.Dialog.FilterType)">
+            <summary>
+            
+            </summary>
+            <param name="filterType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Dialog.ShowFileDialog(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="filter"></param>
+            <param name="filterIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Dialog.ShowFileDialog">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Dialog.ShowBrowserDialog">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.EnumerableExtensions">
+            <summary>
+            Provides a set of static (Shared in Visual Basic) extended methods for querying objects that implement IEnumerable&lt;T&gt;.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.IntegerExtensions">
+            <summary>
+            Extended methods for integer types
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.IntegerExtensions.Digit(System.Int32)">
+            <summary>
+            Gets the number of digits in a number.
+            </summary>
+            <param name="value"></param>
+            <returns>Number of digits.</returns>
+        </member>
+        <member name="T:Meviy3D2M.MarshalEx">
+            <summary>
+            Provides the ability to release COM objects.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MarshalEx.FinalReleaseComObjects(System.Object[])">
+            <summary>
+            Decrements the reference count of multiple COM objects to 0 and releases them.
+            </summary>
+            <param name="objects">Array of COM objects to be released.</param>
+            <remarks>The release is done in the order of the array elements.</remarks>
+        </member>
+        <member name="M:Meviy3D2M.MarshalEx.ReleaseComObjects(System.Object[])">
+            <summary>
+            
+            </summary>
+            <param name="objects"></param>
+        </member>
+        <member name="T:Meviy3D2M.Json">
+            <summary>
+            Provides access to information about a JSON file.
+            </summary>
+            <summary>
+            LINQ to JSON
+            </summary>
+            <summary>
+            Search for properties
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Json.Info">
+            <summary>
+            Provides properties and instance methods for the creation, copying, deletion, moving, and opening of files, and aids in the creation of FileStream objects. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Json.#ctor(System.IO.FileInfo)">
+            <summary>
+            Initializes a new instance of the Json class, which acts as a wrapper for a json file.
+            </summary>
+            <param name="info">Information about the json file referenced by this instance.</param>
+        </member>
+        <member name="M:Meviy3D2M.Json.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the Json class, which acts as a wrapper for a json file.
+            </summary>
+            <param name="fileName">The fully qualified name of the Json file, or the relative file name. Do not end the path with the directory separator character.</param>
+            <exception cref="T:System.ArgumentNullException">fileName is null.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.ArgumentException">.NET Framework and .NET Core versions older than 2.1: The file name is empty, contains only white spaces, or contains invalid characters.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">Access to fileName is denied.</exception>
+            <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+            <exception cref="T:System.NotSupportedException">fileName contains a colon (:) in the middle of the string.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Json.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>Serializes the specified object to a JSON string.</returns>
+        </member>
+        <member name="P:Meviy3D2M.Json.JObject">
+            <summary>
+            Represents a JSON object.
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Json.Item(System.String)">
+            <summary>
+            Gets or sets the JToken with the specified property name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>The JToken with the specified property name.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.Parse">
+            <summary>
+            Load a JObject from a JSON file.
+            </summary>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Json.Parse(System.Text.Encoding)">
+            <summary>
+            Load a JObject from a JSON file with the specified character encoding.
+            </summary>
+            <param name="encoding">The character encoding to use.</param>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.NotSupportedException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Json.Parse(System.IO.FileInfo)">
+            <summary>
+            Provides an instance of the JSON class that reads the specified file.
+            </summary>
+            <param name="info">Information about the json file referenced by this instance.</param>
+            <returns>Instance of a new JSON class.</returns>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Json.Parse(System.String)">
+            <summary>
+            Provides an instance of the JSON class that reads the specified file.
+            </summary>
+            <param name="fileName">The fully qualified name of the Json file, or the relative file name. Do not end the path with the directory separator character.</param>
+            <returns>Instance of a new JSON class.</returns>
+            <exception cref="T:System.ArgumentNullException">fileName is null.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+            <exception cref="T:System.ArgumentException">.NET Framework and .NET Core versions older than 2.1: The file name is empty, contains only white spaces, or contains invalid characters.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">Access to fileName is denied.</exception>
+            <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+            <exception cref="T:System.NotSupportedException">fileName contains a colon (:) in the middle of the string.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file cannot be found.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
+            <exception cref="T:System.IO.IOException">path includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+            <exception cref="T:System.OutOfMemoryException">The exception that is thrown when there is not enough memory to continue the execution of a program.</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+            <exception cref="T:Newtonsoft.Json.JsonReaderException">json is not valid JSON.</exception>
+        </member>
+        <member name="M:Meviy3D2M.Json.ContainsKey(System.String)">
+            <summary>
+            Determines whether the JSON object has the specified property name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>true if the JSON object has the specified property name; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.FirstOrNull(System.String)">
+            <summary>
+            Gets the first token found in a recursive search for the specified property name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>A JToken of the first token found. If not found, null.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.FirstContainsKey(System.String)">
+            <summary>
+             Checks if the property is found by recursive search for the specified property name.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <returns>true if the JSON object has the specified property name; otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.Match(System.String)">
+            <summary>
+            Gets the first token found in a recursive search for the specified regular expression pattern.
+            </summary>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <returns>A JToken of the first token found. If not found, null.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.FirstOrNull(Newtonsoft.Json.Linq.JToken,System.String)">
+            <summary>
+            Recursively searches Json for the specified property name and returns the first value found.
+            </summary>
+            <param name="jtoken">Represents an abstract JSON token.</param>
+            <param name="propertyName">Name of the property.</param>
+            <returns>The JToken of the first property found. If not found, null.</returns>
+        </member>
+        <member name="M:Meviy3D2M.Json.Match(Newtonsoft.Json.Linq.JToken,System.String)">
+            <summary>
+            Recursively searches Json for the specified property name and returns the first value found.
+            </summary>
+            <param name="jtoken">Represents an abstract JSON token.</param>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <returns>The JToken of the first property found. If not found, null.</returns>
+        </member>
+        <member name="T:Meviy3D2M.JTokenExtensions">
+            <summary>
+            Provides a set of static (Shared in Visual Basic) extended methods for casting objects that implement JToken.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.JTokenExtensions.String(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Convert the specified jToken of a value to its String equivalent.
+            </summary>
+            <param name="jToken">The JToken containing the value to convert.</param>
+            <returns>The String that is equivalent to the value contained in JToken, if the conversion succeeded, or null if the conversion failed.</returns>
+            <exception cref="T:System.ArgumentException">The exception that is thrown when one of the arguments provided to a method is not valid.</exception>
+        </member>
+        <member name="M:Meviy3D2M.JTokenExtensions.Bool(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Convert the specified jToken of a logical value to its Boolean equivalent.
+            </summary>
+            <param name="jToken">The JToken containing the logical value to convert.</param>
+            <returns>true if the conversion succeeds and the value is equal to TrueString, otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException">The exception that is thrown when one of the arguments provided to a method is not valid.</exception>
+        </member>
+        <member name="M:Meviy3D2M.JTokenExtensions.Decimal(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Convert the specified jToken of a number to its Decimal equivalent.
+            </summary>
+            <param name="jToken">The JToken containing the number to convert.</param>
+            <returns>The Decimal number that is equivalent to the numeric value contained in JToken, if the conversion succeeded, or zero if the conversion failed.</returns>
+            <exception cref="T:System.ArgumentException">The exception that is thrown when one of the arguments provided to a method is not valid.</exception>
+        </member>
+        <member name="M:Meviy3D2M.JTokenExtensions.Double(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Convert the specified jToken of a number to its Double equivalent.
+            </summary>
+            <param name="jToken">The JToken containing the number to convert.</param>
+            <returns>The Double number that is equivalent to the numeric value contained in JToken, if the conversion succeeded, or zero if the conversion failed.</returns>
+            <exception cref="T:System.ArgumentException">The exception that is thrown when one of the arguments provided to a method is not valid.</exception>
+        </member>
+        <member name="M:Meviy3D2M.JTokenExtensions.Int32(Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Convert the specified jToken of a number to its 32-bit signed integer equivalent.
+            </summary>
+            <param name="jToken">The JToken containing the number to convert.</param>
+            <returns>The Int32 number that is equivalent to the numeric value contained in JToken, if the conversion succeeded, or zero if the conversion failed.</returns>
+            <exception cref="T:System.ArgumentException">The exception that is thrown when one of the arguments provided to a method is not valid.</exception>
+        </member>
+        <member name="T:Meviy3D2M.MsmNcCreator">
+            <summary>
+            MSM_NC_Creator.exe utility
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.MsmNcCreator.ExitCodeFlags">
+            <summary>
+            ExitCode bit flag
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.None">
+            <summary>
+            There are no errors.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.RuntimeParameterError">
+            <summary>
+            1
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.SatFileReadError">
+            <summary>
+            2
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.SatFileImportError">
+            <summary>
+            4
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.JsonFileReadError">
+            <summary>
+            8
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.FeatureCreationError">
+            <summary>
+            16
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.ToolError">
+            <summary>
+            32
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.ProcessError">
+            <summary>
+            64
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.UndefinedError1">
+            <summary>
+            128
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.UndefinedError2">
+            <summary>
+            256
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.UndefinedError3">
+            <summary>
+            512
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.UndefinedError4">
+            <summary>
+            1024
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.OtherWarningErrors">
+            <summary>
+            2048
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.DBError">
+            <summary>
+            4096
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.NewDocumentCreationError">
+            <summary>
+            8192
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.FeatureCAMError">
+            <summary>
+            16384
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.MsmNcCreator.ExitCodeFlags.OtherExceptionErrors">
+            <summary>
+            32768
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MsmNcCreator.Messages(System.Int32)">
+            <summary>
+            Parse the exitcode and get the messages.
+            </summary>
+            <param name="exitCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.EasyMPDPy">
+            <summary>
+            EasyMPD program
+            </summary>
+            <code>
+            usage: main.py input_sat_file [-e INPUT_ENV_DIR] [-f OUTPUT_ENV_DIR] [-o LOG_FILE] [-l {debug, info, warning, error, critical}]
+            </code>
+            <summary>
+            positional arguments
+            </summary>
+            <summary>
+            optional arguments
+            </summary>
+            <summary>
+            methods
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.EasyMPDPy.#ctor(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Initializes the process with the specified executable and script files.
+            </summary>
+            <param name="exeInfo">Information about the python executable file (python.exe)</param>
+            <param name="pyInfo">Information about the python script file (script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.EasyMPDPy.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the process with the specified executable and script file names.
+            </summary>
+            <param name="exeFullName">Information about the python executable file name(python.exe)</param>
+            <param name="pyFullName">Information about the python script file name(script.py)</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.EasyMPDPy.INPUT_SAT_FILE">
+            <summary>
+            input_sat_file
+            </summary>
+            <remarks>Input ACIS file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.EasyMPDPy.INPUT_ENV_DIR">
+            <summary>
+            -e INPUT_ENV_DIR, --input_env_dir INPUT_ENV_DIR
+            </summary>
+            <remarks>Input directory containing env/feature files</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.EasyMPDPy.OUTPUT_ENV_DIR">
+            <summary>
+            -f OUTPUT_ENV_DIR, --output_env_dir OUTPUT_ENV_DIR
+            </summary>
+            <remarks>Output directory where updated env/feature files are saved</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.EasyMPDPy.LOG_FILE">
+            <summary>
+            -o LOG_FILE, --log_file LOG_FILE
+            </summary>
+            <remarks>Log file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.EasyMPDPy.LoggingLevel">
+            <summary>
+            -l {debug,info,warning,error,critical}, --log_level {debug,info,warning,error,critical}
+            </summary>
+            <remarks>Logging level</remarks>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.EasyMPDPy.Start(System.Boolean)">
+            <summary>
+            Starts (or reuses) the process resource that is specified by the StartInfo property of this Process component and associates it with the component.
+            </summary>
+            <param name="positionalFirst">Configure the command line arguments starting with the positional argument.</param>
+            <returns>true if a process resource is started; false if no new process resource is started (for example, if an existing process is reused).</returns>
+            <exception cref="T:System.InvalidOperationException">No file name was specified in the Process component's StartInfo. -or- The UseShellExecute member of the StartInfo property is true while RedirectStandardInput, RedirectStandardOutput, or RedirectStandardError is true.</exception>
+            <exception cref="T:System.ComponentModel.Win32Exception">There was an error in opening the associated file.</exception>
+            <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.FcampostPy">
+            <summary>
+            post-processing program
+            </summary>
+            <remarks>
+            file location: c:\custom\pppf-dx-featurecam-post\fcampost
+            <code>
+            usage: fcampost.py [-h] [-o LOG_FILE] [-l {debug,info,warning,error,critical}] post_directory basename
+            </code>
+            </remarks>
+            <summary>
+            positional arguments
+            </summary>
+            <summary>
+            optional arguments
+            </summary>
+            <summary>
+            methods
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcampostPy.#ctor(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Initializes the process with the specified executable and script files.
+            </summary>
+            <param name="exeInfo">Information about the python executable file (python.exe)</param>
+            <param name="pyInfo">Information about the python script file (script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcampostPy.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the process with the specified executable and script file names.
+            </summary>
+            <param name="exeFullName">Information about the python executable file name(python.exe)</param>
+            <param name="pyFullName">Information about the python script file name(script.py)</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.POST_DIRECTORY">
+            <summary>
+            post_directory
+            </summary>
+            <remarks>Directory containing all files to be processed</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.BASENAME">
+            <summary>
+            basename
+            </summary>
+            <remarks>Common basename of the files in the directory</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.Help">
+            <summary>
+            -h, --help
+            </summary>
+            <remarks>show this help message and exit</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.SUFFIX">
+            <summary>
+            -b SUFFIX, --backup SUFFIX
+            </summary>
+            <remarks>Backup original file with given suffix</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.REFERENCE_FILE">
+            <summary>
+            -r REFERENCE_FILE, --reference_file REFERENCE_FILE
+            </summary>
+            <remarks>Reference mesh(STL) file if any</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.SIMULATION_DIR">
+            <summary>
+            -s SIMULATION_DIR, --simulation_dir SIMULATION_DIR
+            </summary>
+            <remarks>Simulation Output directory if any</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.LOG_FILE">
+            <summary>
+            -o LOG_FILE, --log_file LOG_FILE
+            </summary>
+            <remarks>Log file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcampostPy.LoggingLevel">
+            <summary>
+            -l {debug,info,warning,error,critical}, --log_level {debug,info,warning,error,critical}
+            </summary>
+            <remarks>Logging level</remarks>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcampostPy.Start(System.Boolean)">
+            <summary>
+            Starts (or reuses) the process resource that is specified by the StartInfo property of this Process component and associates it with the component.
+            </summary>
+            <param name="positionalFirst">Configure the command line arguments starting with the positional argument.</param>
+            <returns>true if a process resource is started; false if no new process resource is started (for example, if an existing process is reused).</returns>
+            <exception cref="T:System.InvalidOperationException">No file name was specified in the Process component's StartInfo. -or- The UseShellExecute member of the StartInfo property is true while RedirectStandardInput, RedirectStandardOutput, or RedirectStandardError is true.</exception>
+            <exception cref="T:System.ComponentModel.Win32Exception">There was an error in opening the associated file.</exception>
+            <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.FcamprePy">
+            <summary>
+            pre-processing program
+            </summary>
+            <remarks>
+            file location: c:\custom\pppf-dx-featurecam-pre\fcampre
+            <code>
+            usage: fcampre.py [-h] [-e INPUT_ENV_DIR] [-n OUTPUT_ENV_DIR] [-g] [-p] [-c OUTPUT_NC_FILE] [-m {left, right, front, back, auto}] [-r GRIP_MIN_LENGTH] [-i INTERMEDIATE_DIR] [-o LOG_FILE] [-l {debug, info, warning, error, critical}] input_sat_file output_sat_file
+            </code>
+            </remarks>
+            <summary>
+            positional arguments
+            </summary>
+            <summary>
+            optional arguments
+            </summary>
+            <summary>
+            methods
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcamprePy.#ctor(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Initializes the process with the specified executable and script files.
+            </summary>
+            <param name="exeInfo">Information about the python executable file (python.exe)</param>
+            <param name="pyInfo">Information about the python script file (script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcamprePy.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the process with the specified executable and script file names.
+            </summary>
+            <param name="exeFullName">Information about the python executable file name(python.exe)</param>
+            <param name="pyFullName">Information about the python script file name(script.py)</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.INPUT_SAT_FILE">
+            <summary>
+            input_sat_file
+            </summary>
+            <remarks>Input ACIS file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.OUTPUT_SAT_FILE">
+            <summary>
+            output_sat_file
+            </summary>
+            <remarks>Output ACIS file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.Help">
+            <summary>
+            -h, --help
+            </summary>
+            <remarks>show this help message and exit</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.INPUT_ENV_DIR">
+            <summary>
+            -e INPUT_ENV_DIR, --input_env_dir INPUT_ENV_DIR
+            </summary>
+            <remarks>Input directory containing env/feature files</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.OUTPUT_ENV_DIR">
+            <summary>
+            -n OUTPUT_ENV_DIR, --output_env_dir OUTPUT_ENV_DIR
+            </summary>
+            <remarks>Output directory where updated env/feature files are saved</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.JsonNamesGeneralized">
+            <summary>
+            -g, --json_names_generalized
+            </summary>
+            <remarks>Assume input JSON files are env.json and feature_*.json</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.PreserveFeatureIndex">
+            <summary>
+            -p, --preserve_feature_index
+            </summary>
+            <remarks>Keep original feature files suffix</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.OutputNcFile">
+            <summary>
+            -c, --output_nc_file
+            </summary>
+            <remarks>Output NC file for chamfer on gripping side face</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.GrippingSide">
+            <summary>
+            -m {left,right,front,back,auto}, --grip_side {left,right,front,back,auto}
+            </summary>
+            <remarks>Gripping side</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.GRIP_MIN_LENGTH">
+            <summary>
+            -r GRIP_MIN_LENGTH, --grip_min_length GRIP_MIN_LENGTH
+            </summary>
+            <remarks>Minimum length of gripping margin</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.INTERMEDIATE_DIR">
+            <summary>
+            -i INTERMEDIATE_DIR, --intermediate_dir INTERMEDIATE_DIR
+            </summary>
+            <remarks>Directory to save intermediate files for debugging</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.LOG_FILE">
+            <summary>
+            -o LOG_FILE, --log_file LOG_FILE
+            </summary>
+            <remarks>Log file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.FcamprePy.LoggingLevel">
+            <summary>
+            -l {debug,info,warning,error,critical}, --log_level {debug,info,warning,error,critical}
+            </summary>
+            <remarks>Logging level</remarks>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.FcamprePy.Start(System.Boolean)">
+            <summary>
+            Starts (or reuses) the process resource that is specified by the StartInfo property of this Process component and associates it with the component.
+            </summary>
+            <param name="positionalFirst">Configure the command line arguments starting with the positional argument.</param>
+            <returns>true if a process resource is started; false if no new process resource is started (for example, if an existing process is reused).</returns>
+            <exception cref="T:System.InvalidOperationException">No file name was specified in the Process component's StartInfo. -or- The UseShellExecute member of the StartInfo property is true while RedirectStandardInput, RedirectStandardOutput, or RedirectStandardError is true.</exception>
+            <exception cref="T:System.ComponentModel.Win32Exception">There was an error in opening the associated file.</exception>
+            <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.LogLevel">
+            <summary>
+            LOG LEVEL
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.LogLevel.debug">
+            <summary>
+            DEBUG
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.LogLevel.info">
+            <summary>
+            INFO
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.LogLevel.warning">
+            <summary>
+            WARNING
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.LogLevel.error">
+            <summary>
+            ERROR
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.LogLevel.critical">
+            <summary>
+            CRITICAL
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.ProcessdesignPy">
+            <summary>
+            process design
+            </summary>
+            <remarks>
+            file location: c:\custom\pppf-dx-featurecam-pre\fcampre
+            <code>
+            usage: processdesign.py [-h] [-t TEMPLATE_FILE] [-e INPUT_ENV_DIR] [-g] [-o LOG_FILE] [-l {debug,info,warning,error,critical}] input_sat_file output_file
+            </code>
+            </remarks>
+            <summary>
+            positional arguments
+            </summary>
+            <summary>
+            optional arguments
+            </summary>
+            <summary>
+            methods
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.ProcessdesignPy.#ctor(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Initializes the process with the specified executable and script files.
+            </summary>
+            <param name="exeInfo">Information about the python executable file (python.exe)</param>
+            <param name="pyInfo">Information about the python script file (script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.ProcessdesignPy.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the process with the specified executable and script file names.
+            </summary>
+            <param name="exeFullName">Information about the python executable file name(python.exe)</param>
+            <param name="pyFullName">Information about the python script file name(script.py)</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.INPUT_SAT_FILE">
+            <summary>
+            input_sat_file
+            </summary>
+            <remarks>Input ACIS file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.OUTPUT_FILE">
+            <summary>
+            output_file
+            </summary>
+            <remarks>Process design file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.Help">
+            <summary>
+            -h, --help
+            </summary>
+            <remarks>show this help message and exit</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.TEMPLATE_FILE">
+            <summary>
+            -t TEMPLATE_FILE, --template_file TEMPLATE_FILE
+            </summary>
+            <remarks>Input template file for process design</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.INPUT_ENV_DIR">
+            <summary>
+            -e INPUT_ENV_DIR, --input_env_dir INPUT_ENV_DIR
+            </summary>
+            <remarks>Input directory containing env/feature files</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.JsonNamesGeneralized">
+            <summary>
+            -g, --json_names_generalized
+            </summary>
+            <remarks>Assume input JSON files are env.json and feature_*.json</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.LOG_FILE">
+            <summary>
+            -o LOG_FILE, --log_file LOG_FILE
+            </summary>
+            <remarks>Log file</remarks>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.ProcessdesignPy.LoggingLevel">
+            <summary>
+            -l {debug,info,warning,error,critical}, --log_level {debug,info,warning,error,critical}
+            </summary>
+            <remarks>Logging level</remarks>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.ProcessdesignPy.Start(System.Boolean)">
+            <summary>
+            Starts (or reuses) the process resource that is specified by the StartInfo property of this Process component and associates it with the component.
+            </summary>
+            <param name="positionalFirst">Configure the command line arguments starting with the positional argument.</param>
+            <returns>true if a process resource is started; false if no new process resource is started (for example, if an existing process is reused).</returns>
+            <exception cref="T:System.InvalidOperationException">No file name was specified in the Process component's StartInfo. -or- The UseShellExecute member of the StartInfo property is true while RedirectStandardInput, RedirectStandardOutput, or RedirectStandardError is true.</exception>
+            <exception cref="T:System.ComponentModel.Win32Exception">There was an error in opening the associated file.</exception>
+            <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.PyLog">
+            <summary>
+             python process log
+            </summary>
+            <remarks>log format: YYYY-MM-DD HH:mm:ss - {level}: message </remarks>
+            <summary>
+            Instance member
+            </summary>
+            <summary>
+            Static member
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.PyLog.Info">
+            <summary>
+            Provides properties and instance methods for the creation, copying, deletion, moving, and opening of log file, and aids in the creation of FileStream objects. This class cannot be inherited.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.#ctor(System.IO.FileInfo)">
+            <summary>
+            Initializes PyLog with the information from the specified log file.
+            </summary>
+            <param name="info">Information about the log file.</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.#ctor(System.String)">
+            <summary>
+            Initializes PyLog with the pathname of the specified log file.
+            </summary>
+            <param name="fullName">Information about the log file name.</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyLog.Lines">
+            <summary>
+            A string list containing all lines of the file.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.LastLines(System.String)">
+            <summary>
+            Searches for elements that match the regular expression from the whole, and returns the element with the highest index number and subsequent elements.
+            </summary>
+            <remarks>regular expression sample: "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01]) ([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9] - ERROR:"</remarks>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <returns>A list of matched strings and subsequent strings. If no match, a list of empty strings.</returns>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.ReadAllLines">
+            <summary>
+            Opens a text file, reads all lines of the file, and then closes the file.
+            <para>This method attempts to automatically detect the encoding of a file based on the presence of byte order marks. Encoding formats UTF-8 and UTF-32 (both big-endian and little-endian) can be detected.</para>
+            </summary>
+            <remark>A string array containing all lines of the file.</remark>
+            <exception cref="T:System.ArgumentException">.NET Framework and .NET Core versions older than 2.1: path is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters by using the GetInvalidPathChars() method.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">path specified a file that is read-only. -or- This operation is not supported on the current platform. -or- path specified a directory. -or- The caller does not have the required permission.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file specified in path was not found.</exception>
+            <exception cref="T:System.NotSupportedException">path is in an invalid format.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.ReadAllLines(System.Text.Encoding)">
+            <summary>
+            Opens a file, reads all lines of the file with the specified encoding, and then closes the file.
+            </summary>
+            <remark>A string array containing all lines of the file.</remark>
+            <param name="encoding">The encoding applied to the contents of the file.</param>
+            <exception cref="T:System.ArgumentException">.NET Framework and .NET Core versions older than 2.1: path is a zero-length string, contains only white space, or contains one or more invalid characters. You can query for invalid characters by using the GetInvalidPathChars() method.</exception>
+            <exception cref="T:System.ArgumentNullException">path is null.</exception>
+            <exception cref="T:System.IO.PathTooLongException">The specified path, file name, or both exceed the system-defined maximum length.</exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid (for example, it is on an unmapped drive).</exception>
+            <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
+            <exception cref="T:System.UnauthorizedAccessException">path specified a file that is read-only. -or- This operation is not supported on the current platform. -or- path specified a directory. -or- The caller does not have the required permission.</exception>
+            <exception cref="T:System.IO.FileNotFoundException">The file specified in path was not found.</exception>
+            <exception cref="T:System.NotSupportedException">path is in an invalid format.</exception>
+            <exception cref="T:System.Security.SecurityException">The caller does not have the required permission.</exception>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.TryReadAllLines">
+            <summary>
+            Opens a text file, reads all lines of the file, and then closes the file.
+            </summary>
+            <remark>A string array containing all lines of the file.</remark>
+            <returns>true if the text file was read successfully; Otherwise, false.</returns>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.Parse(System.String)">
+            <summary>
+            Converts a log file to the equivalent PyLog.
+            </summary>
+            <remarks>No exception is returned even if the log file fails to be read.</remarks>
+            <param name="fullName">Information about the log file name.</param>
+            <return>An instance of PyLog with a log file loaded. If the read fails, lines property returns an empty list.</return>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyLog.Parse(System.String,System.Text.Encoding)">
+            <summary>
+            Converts a log file to an equivalent PyLog using the character encoding.
+            </summary>
+            <remarks>No exception is returned even if the log file fails to be read.</remarks>
+            <param name="fullName">Information about the log file name.</param>
+            <param name="encoding">The encoding applied to the contents of the file.</param>
+            <return>An instance of PyLog with a log file loaded. If the read fails, lines property returns an empty list.</return>
+        </member>
+        <member name="T:Meviy3D2M.PyProcess.PyProcess">
+            <summary>
+            Python App Handler
+            </summary>
+            <summary>
+            Log
+            </summary>
+            <summary>
+            Process
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.PyProcess.OptionalArguments">
+            <summary>
+            Optional arguments
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.PyProcess.PositionalArguments">
+            <summary>
+            Positional arguments
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.PyProcess.ExeInfo">
+            <summary>
+            Information about the python executable file (python.exe)
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.PyProcess.PyProcess.PyInfo">
+            <summary>
+            Information about the python script file (script.py)
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.#ctor(System.IO.FileInfo,System.IO.FileInfo)">
+            <summary>
+            Initializes the process with the specified executable and script files.
+            </summary>
+            <param name="exeInfo">Information about the python executable file (python.exe)</param>
+            <param name="pyInfo">Information about the python script file (script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.#ctor(System.String,System.String)">
+            <summary>
+            Initializes the process with the specified executable and script file names.
+            </summary>
+            <param name="exeFullName">Information about the python executable file name(python.exe)</param>
+            <param name="pyFullName">Information about the python script file name(script.py)</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.AddOptionalArgument(System.String)">
+            <summary>
+            Add optional arguments to the process.
+            </summary>
+            <param name="arg">argument string</param>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.AddPositionalArgument(System.String)">
+            <summary>
+            Add positional arguments to the process.
+            </summary>
+            <param name="arg">argument string</param>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.Log">
+            <summary>
+             python process log
+            </summary>
+            <remarks>log format: YYYY-MM-DD HH:mm:ss - {level}: message </remarks>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.BindLog(System.String)">
+            <summary>
+            Converts a log file to the equivalent PyLog.
+            </summary>
+            <param name="fullName">Information about the log file name.</param>
+            <return>An instance of PyLog with a log file loaded. If the read fails, lines property returns an empty list.</return>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.ExitCode">
+            <summary>
+            Gets the value that the associated process specified when it terminated.
+            </summary>
+            <value>The code that the associated process specified when it terminated.</value>
+            <exception cref="T:System.InvalidOperationException">The process has not exited. -or- The process Handle is not valid.</exception>
+            <exception cref="T:System.NotSupportedException">You are trying to access the ExitCode property for a process that is running on a remote computer. This property is available only for processes that are running on the local computer.</exception>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.StandardOutput">
+            <summary>
+            Gets a stream used to read the textual output of the application.
+            </summary>
+            <value>A StreamReader that can be used to read the standard output stream of the application.</value>
+            <exception cref="T:System.InvalidOperationException">The StandardOutput stream has not been defined for redirection; ensure RedirectStandardOutput is set to true and UseShellExecute is set to false. -or- The StandardOutput stream has been opened for asynchronous read operations with BeginOutputReadLine().</exception>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.Arguments">
+            <summary>
+            Gets the set of command-line arguments to use when starting the application.
+            </summary>
+            <value>A single string containing the arguments to pass to the target application specified in the FileName property. The default is an empty string ("").</value>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.PositionalFirstArguments">
+            <summary>
+            Gets the set of command-line arguments to use when starting the application.
+            </summary>
+            <value>A single string containing the arguments to pass to the target application specified in the FileName property. The default is an empty string ("").</value>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.CreateNoWindow">
+            <summary>
+            Gets or sets a value indicating whether to start the process in a new window.
+            </summary>
+            <value>true if the process should be started without creating a new window to contain it; otherwise, false. The default is true.</value>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.UseShellExecute">
+            <summary>
+            Gets or sets a value indicating whether to use the operating system shell to start the process.
+            </summary>
+            <value>true if the shell should be used when starting the process; false if the process should be created directly from the executable file. The default is true off .NET Framework apps and false on .NET Core apps.</value>
+            <exception cref="T:System.PlatformNotSupportedException">An attempt to set the value to true on Universal Windows Platform (UWP) apps occurs.</exception>
+        </member>
+        <member name="P:Meviy3D2M.PyProcess.PyProcess.RedirectStandardOutput">
+            <summary>
+            Gets or sets a value that indicates whether the textual output of an application is written to the StandardOutput stream.
+            </summary>
+            <value>true if output should be written to StandardOutput; otherwise, false. The default is false.</value>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.Start(System.Boolean)">
+            <summary>
+            Starts (or reuses) the process resource that is specified by the StartInfo property of this Process component and associates it with the component.
+            </summary>
+            <param name="positionalFirst">Configure the command line arguments starting with the positional argument.</param>
+            <returns>true if a process resource is started; false if no new process resource is started (for example, if an existing process is reused).</returns>
+            <exception cref="T:System.InvalidOperationException">No file name was specified in the Process component's StartInfo. -or- The UseShellExecute member of the StartInfo property is true while RedirectStandardInput, RedirectStandardOutput, or RedirectStandardError is true.</exception>
+            <exception cref="T:System.ComponentModel.Win32Exception">There was an error in opening the associated file.</exception>
+            <exception cref="T:System.ObjectDisposedException">The process object has already been disposed.</exception>
+            <exception cref="T:System.PlatformNotSupportedException">Method not supported on operating systems without shell support such as Nano Server (.NET Core only).</exception>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.Close">
+            <summary>
+            Frees all the resources that are associated with this component.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.Kill">
+            <summary>
+            Immediately stops the associated process.
+            </summary>
+            <exception cref="T:System.ComponentModel.Win32Exception">The associated process could not be terminated.</exception>
+            <exception cref="T:System.NotSupportedException">You are attempting to call Kill() for a process that is running on a remote computer. The method is available only for processes running on the local computer.</exception>
+            <exception cref="T:System.InvalidOperationException">There is no process associated with this Process object.</exception>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.WaitForExit">
+            <summary>
+            Sets the period of time to wait for the associated process to exit, and blocks the current thread of execution until the time has elapsed or the process has exited. To avoid blocking the current thread, use the Exited event.
+            </summary>
+            <exception cref="T:System.ComponentModel.Win32Exception">The wait setting could not be accessed.</exception>
+            <exception cref="T:System.SystemException">No process Id has been set, and a Handle from which the Id property can be determined does not exist. -or- There is no process associated with this Process object. -or- You are attempting to call WaitForExit() for a process that is running on a remote computer. This method is available only for processes that are running on the local computer.</exception>
+        </member>
+        <member name="M:Meviy3D2M.PyProcess.PyProcess.Dispose">
+            <summary>
+            Release all resources used by this process.
+            </summary>
+            <remarks>The Dispose method calls Close. Placing the Process object in a using block disposes of resources without the need to call Close.</remarks>
+        </member>
+        <member name="T:Meviy3D2M.ConfigurationBase`1">
+            <summary>
+            Abstract class for configuration.
+            </summary>
+            <typeparam name="SerializingObject">Object to serialize to a json file.</typeparam>
+        </member>
+        <member name="F:Meviy3D2M.ConfigurationBase`1._pathname">
+            <summary>
+            The path name of the Config file to reference.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.ConfigurationBase`1.Fields">
+            <summary>
+            Objects to be written as JSON
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.#ctor(System.String,System.String)">
+            <summary>
+            Initialize a new Config with the specified file.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.#ctor">
+            <summary>
+            Initialize a new Config.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.ToString">
+            <summary>
+            Returns the JSON for this Configuration object.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.Save">
+            <summary>
+            Saves this Configuration object for a JSON file.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.Load">
+            <summary>
+            Loads a Configuration object from a JSON file.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.Load(System.Text.Encoding)">
+            <summary>
+            Loads a Configuration object from a JSON file.
+            </summary>
+            <param name="encoding">The character encoding to use.</param>
+        </member>
+        <member name="M:Meviy3D2M.ConfigurationBase`1.Parse(System.String)">
+            <summary>
+            Loads a Configuration object from a string that contains JSON.
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.FileSystemEx">
+            <summary>
+            Provides properties and methods for working with drives, files, and directories.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.FileSystemEx.MoveDirectory(System.String,System.String)">
+            <summary>
+            Moves a directory from one location to another.
+            </summary>
+            <param name="sourceDirectoryName">Path of the directory to be moved.</param>
+            <param name="destinationDirectoryName">Path of the directory to which the source directory is being moved.</param>
+        </member>
+        <member name="T:Meviy3D2M.MathEx">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.MathEx.GetDecimalDigitLength(System.Decimal,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <remarks>Decimal.GetBits(d)[3] >> 16 &amp; 0x00FF</remarks>
+            <param name="d"></param>
+            <param name="ignoreTrailingZeros"></param>
+            <returns></returns>
+            <see href="https://qiita.com/chocolamint/items/80ca5271c6ce1a185430">System.Decimal 構造体の小数桁数を取得する</see>
+        </member>
+        <member name="M:Meviy3D2M.MathEx.GetDigit(System.Int64,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <param name="d"></param>
+            <returns></returns>
+            <see href="https://webbibouroku.com/Blog/Article/digit-cs">10進数の桁数とx桁目の数を求める</see>
+        </member>
+        <member name="T:Meviy3D2M.Messages">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.Messages.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Messages.Load(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sourcePathName"></param>
+        </member>
+        <member name="M:Meviy3D2M.Messages.Get(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.PathEx">
+            <summary>
+            Performs operations on String instances that contain file or directory path information. These operations are performed in a cross-platform manner.
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.PathEx.GetSpecialPath(System.IO.DirectoryInfo,Meviy3D2M.SpecialPathHeader,System.String)">
+            <summary>
+            Get a special path.
+            </summary>
+            <param name="original"></param>
+            <param name="header"></param>
+            <param name="label"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.PathEx.GetSpecialPath(System.String,Meviy3D2M.SpecialPathHeader,System.String)">
+            <summary>
+            Get a special path.
+            </summary>
+            <param name="original"></param>
+            <param name="header"></param>
+            <param name="label"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.PathEx.GetSpecialHeader(System.IO.DirectoryInfo)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.PathEx.GetSpecialHeader(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.ProgressData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ProgressData.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="total"></param>
+            <param name="count"></param>
+        </member>
+        <member name="P:Meviy3D2M.ProgressData.Total">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.ProgressData.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.ProgressData.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.ProgressData.GetJson(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="total"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Meviy3D2M.SpecialPathHeader">
+            <summary>
+            Enumerates special path headers.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SpecialPathHeader.Temporary">
+            <summary>
+            tmp
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.SpecialPathHeader.Work">
+            <summary>
+            wrk
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.SpecialPathHeaderExtentions">
+            <summary>
+            Extends SpecialPathHeader
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.SpecialPathHeaderExtentions.String(Meviy3D2M.SpecialPathHeader)">
+            <summary>
+            Gets the header string for the special path.
+            </summary>
+            <param name="header">SpecialPathHeader enum value</param>
+            <returns>Header string for a special path.</returns>
+        </member>
+        <member name="T:Meviy3D2M.Stopwatch">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Stopwatch.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.Stopwatch.Start(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="title"></param>
+        </member>
+        <member name="M:Meviy3D2M.Stopwatch.Lap(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="comment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Stopwatch.Stop(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="comment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Meviy3D2M.Stopwatch.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Stopwatch.LastElapsed">
+            <summary>
+            Previous elapsed time for interval measurement
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.StringExtensions">
+            <summary>
+            Extended methods for string types
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.Anchors(System.String)">
+            <summary>
+            Get a string with anchors (^ $) added to the beginning and end of this string value. 
+            </summary>
+            <param name="value"></param>
+            <returns>A string that encloses this string value in regular expression anchor (^ $). Or, if this string value is null or an empty string (""), a string equivalent to this string value.</returns>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.Quotes(System.String)">
+            <summary>
+            Get a string with quotes (" ") added to the beginning and end of this string value. 
+            </summary>
+            <param name="value"></param>
+            <returns>A string that encloses this string value in quotation marks. Or, if this string value is null or an empty string (""), a string equivalent to this string value.</returns>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.Unquotes(System.String)">
+            <summary>
+            Get the string of this string value without the quotes (" ") at the beginning and end.
+            </summary>
+            <param name="value"></param>
+            <returns>The unquoted string of this string value. Or, if there are no quotation marks at the beginning and end of this string value, a string equivalent to this string value.</returns>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.Match(System.String,System.String)">
+            <summary>
+            Searches this string value for the first occurrence of the specified regular expression.
+            </summary>
+            <param name="value">The string to search for a match.</param>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <returns>Match. An object that contains information about the match.</returns>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.Match(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+            <summary>
+            Searches this string value for the first occurrence of the specified regular expression.
+            </summary>
+            <param name="value">The string to search for a match.</param>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+            <returns>Match. An object that contains information about the match.</returns>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">options is not a valid RegexOptions value.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.IsMatch(System.String,System.String)">
+            <summary>
+            Indicates whether the specified regular expression finds a match in this string value.
+            </summary>
+            <param name="value"></param>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <returns>true if the regular expression finds a match; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="M:Meviy3D2M.StringExtensions.IsMatch(System.String,System.String,System.Text.RegularExpressions.RegexOptions)">
+            <summary>
+            Indicates whether the specified regular expression finds a match in this string value.
+            </summary>
+            <param name="value"></param>
+            <param name="pattern">The regular expression pattern to match.</param>
+            <param name="options">A bitwise combination of the enumeration values that provide options for matching.</param>
+            <returns>true if the regular expression finds a match; otherwise, false.</returns>
+            <exception cref="T:System.ArgumentException">A regular expression parsing error occurred.</exception>
+            <exception cref="T:System.ArgumentNullException">input or pattern is null.</exception>
+            <exception cref="T:System.ArgumentOutOfRangeException">options is not a valid RegexOptions value.</exception>
+            <exception cref="T:System.Text.RegularExpressions.RegexMatchTimeoutException">A time-out occurred. For more information about time-outs, see the Remarks section.</exception>
+        </member>
+        <member name="T:Meviy3D2M.TemporaryFile">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Meviy3D2M.TemporaryFile.FullName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.TemporaryFile.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Meviy3D2M.TemporaryFile.Finalize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Meviy3D2M.TemporaryFile.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Meviy3D2M.Win32API.Win32">
+            <summary>
+            This header is used by multiple technologies.
+            </summary>
+            <see href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/">winuser.h header</see>
+        </member>
+        <member name="M:Meviy3D2M.Win32API.Win32.GetGuiResources(System.IntPtr,System.UInt32)">
+            <summary>
+            Retrieves the count of handles to graphical user interface (GUI) objects in use by the specified process.
+            </summary>
+            <param name="hProcess">A handle to the process. The handle must refer to a process in the current session, and must have the PROCESS_QUERY_INFORMATION access right (see Process security and access rights).</param>
+            <param name="uiFlags">The GUI object type.</param>
+            <returns>If the function succeeds, the return value is the count of handles to GUI objects in use by the process. If no GUI objects are in use, the return value is zero. If the function fails, the return value is zero. To get extended error information, call GetLastError.</returns>
+            <see href="https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getguiresources">GetGuiResources function</see>
+        </member>
+        <member name="F:Meviy3D2M.Win32API.Win32.GR_GDIOBJECTS">
+            <summary>
+            Return the count of GDI objects.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Win32API.Win32.GR_USEROBJECTS">
+            <summary>
+            Return the peak count of GDI objects. Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  This value is not supported until Windows 7 and Windows Server 2008 R2.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Win32API.Win32.GR_GDIOBJECTS_PEAK">
+            <summary>
+            Return the count of USER objects.
+            </summary>
+        </member>
+        <member name="F:Meviy3D2M.Win32API.Win32.GR_USEROBJECTS_PEAK">
+            <summary>
+            Return the peak count of USER objects. Windows Server 2008, Windows Vista, Windows Server 2003 and Windows XP:  This value is not supported until Windows 7 and Windows Server 2008 R2.
+            </summary>
+        </member>
+    </members>
+</doc>

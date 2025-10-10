@@ -1,0 +1,22 @@
+#  这是一 FeatureCAM 进给/速率和切削数据数据库输出文件。
+#  零件:	2D_SOLIDM
+#  日期:	2020年4月1日 9:59:45
+#  
+#  库名称	刀具
+#  自...版本输出 26.0.0.0340
+#  请勿改变进给/转速或切削数据组 ID 串
+# 这是一表格定界符文本文件，它可直接输入到任何
+# 表单或数据库程序或重新输入回 FeatureCAM。
+#
+
+_单位	毫米
+
+mill_feed_speed_values
+stock_material	tool_material	tool_coating	hard_index	hardness	sp_profile_rough	fd_profile_rough	sp_profile_finish	fd_profile_finish	sp_slot_rough	fd_slot_rough	sp_slot_finish	fd_slot_finish	sp_face_rough	fd_face_rough	sp_face_finish	fd_face_finish	sp_plunge_rough	fd_plunge_rough
+铝	HSS	BRIGHT	1	627	198.12	0.2	304.8	0.12	132.74	0.134	204.22	0.0804	316.99	0.2	487.68	0.12	241.81	0.14	
+铝	CARBIDE	BRIGHT	1	627	594.4	0.2	914.4	0.12	398.2	0.134	612.6	0.0804	951	0.2	1463	0.12	725.4	0.14	
+
+drill_feed_speed_values
+stock_material	tool_material	tool_coating	hard_index	hardness	sp_drill	fd_drill
+铝	HSS	BRIGHT	1	627	76.2	0.3	
+铝	CARBIDE	BRIGHT	1	627	213.36	0.3	

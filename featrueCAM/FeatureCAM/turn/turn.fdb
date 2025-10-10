@@ -1,0 +1,35 @@
+#  这是一 FeatureCAM 进给/速率和切削数据数据库输出文件。
+#  零件:	turn
+#  日期:	2024年12月12日 10:56:20
+#  
+#  库名称	基本米制
+#  自...版本输出 28.0.0.0032
+#  请勿改变进给/转速或切削数据组 ID 串
+# 这是一表格定界符文本文件，它可直接输入到任何
+# 表单或数据库程序或重新输入回 FeatureCAM。
+#
+
+_单位	毫米
+
+turn_feed_speed_values
+stock_material	tool_grade	hard_index	hardness	sp_od_rough	fd_od_rough	sp_od_finish	fd_od_finish	sp_id_rough	fd_id_rough	sp_id_finish	fd_id_finish	sp_face_rough	fd_face_rough	sp_face_finish	fd_face_finish	sp_grv_rough	fd_grv_rough	sp_grv_finish	fd_grv_finish	sp_co_rough	fd_co_rough	sp_co_finish	fd_co_finish	sp_thread_rough	fd_thread_finish
+铝	CARBIDE	1	125	365.76	0.3	487.68	0.12	365.76	0.3	487.68	0.12	365.76	0.3	487.68	0.12	365.76	0.3	487.68	0.12	365.76	0.2	487.68	0.04	365.76	487.68	
+
+tool_grade_scale_values
+tool_grade	base_grade	speed_scale	feed_scale
+Ken_KD100	硬质合金	130	100
+金属陶瓷	CARBIDE	120	100
+Ken_KC9120	硬质合金	115	100
+Sand_GC4025	CARBIDE	100	100
+Sand_H13A	硬质合金	100	100
+PCD	CARBIDE	130	100
+高速钢		100	100
+硬质合金		100	100
+CBN	硬质合金	130	100
+涂层硬质合金	CARBIDE	115	100
+Ken_K313	硬质合金	100	100
+陶瓷	CARBIDE	125	100
+Ken_KC935	硬质合金	115	100
+Ken_KD081	CARBIDE	130	100
+Ken_KC730	硬质合金	115	100
+Sand_GC235	CARBIDE	100	100
